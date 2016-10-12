@@ -18,6 +18,11 @@ Para utilizar un [Link](www.duckduckgo.com) debemos de encerrar el texto en brac
 
 ## Imagenes
 Para nosostros utilizar imagenes debemos de colocar un texto 
+![mm](https://openclipart.org/image/2400px/svg_to_png/240726/fossasia2016-2016021130.png)
 
 ## Formateo de codigo
 Para nosostros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
+
+```javascript
+var mensaje = "Hola mundo";
+```
