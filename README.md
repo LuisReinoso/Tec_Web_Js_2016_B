@@ -54,3 +54,16 @@ Para usar tablas necesitamos definir las filas con |
 Para escribir varias lineas de citas solamente las concatenamos en la siguiente linea utilizando mayor que `>`:
 
 > Si era tan bueno, por qué se murio.?
+
+## Saltos de linea
+Para utilizar un salto de linea debemos de utilizar mas de 3 veces el caracter `-`
+
+---
+
+O el caracter `*`
+
+***
+
+O el caracter `_`
+
+___
