@@ -51,5 +51,6 @@ Para usar tablas necesitamos definir las filas con |
  
 
 ## Citas
+Para escribir varias lineas de citas solamente las concatenamos en la siguiente linea utilizando mayor que `>`:
 
-> Si era tan bueno, porque se murio.
+> Si era tan bueno, por qué se murio.?
