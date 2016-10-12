@@ -5,7 +5,6 @@ Repositorio para aplicaciones web
 Este repositorio forma parte del [curso de tecnologias web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
 
 ## Lista
-
 1. El numero
 2. De las listas
  * lista no ordenada 1
@@ -42,3 +41,10 @@ var mensaje = "Hola mundo";
 <html>
 </html>
 ```
+
+## Tablas
+Para usar tablas necesitamos definir las filas con |
+
+| Columna 1| Columna 2|Columna 3|
+|-|-|-|
+| valor 1| valor 2|valor 3|
