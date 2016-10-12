@@ -14,5 +14,10 @@ Este repositorio forma parte del [curso de tecnologias web](https://github.com/a
 4. no importa
 
 ## Links
-
 Para utilizar un [Link](www.duckduckgo.com) debemos de encerrar el texto en brackets [] seguido del URL en parentesis ()
+
+## Imagenes
+Para nosostros utilizar imagenes debemos de colocar un texto 
+
+## Formateo de codigo
+Para nosostros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
