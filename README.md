@@ -4,7 +4,7 @@ Repositorio para aplicaciones web
 # Repositorio de Tecnologias Web con Js
 Este repositorio forma parte del [curso de tecnologias web](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
 
-## Lista Ordenada
+## Lista
 
 1. El numero
 2. De las listas
@@ -23,6 +23,22 @@ Para nosostros utilizar imagenes debemos de colocar un texto
 ## Formateo de codigo
 Para nosostros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
 
+* Bloque de código con `javascript`
+
 ```javascript
 var mensaje = "Hola mundo";
+```
+
+* Bloque de código de una `consola`
+
+```
+> apt-get update paquete
+>
+```
+
+* Bloque de HTML
+
+```
+<html>
+</html>
 ```
