@@ -45,6 +45,6 @@ var mensaje = "Hola mundo";
 ## Tablas
 Para usar tablas necesitamos definir las filas con |
 
-| Columna 1| Columna 2|Columna 3|
-|-|-|-|
-| valor 1| valor 2|valor 3|
+ Columna 1|Columna 2|Columna 3
+ --- | --- | ---
+ valor 1| valor 2|valor 3
