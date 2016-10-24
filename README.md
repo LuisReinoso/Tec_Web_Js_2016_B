@@ -51,54 +51,71 @@ El tema de la práctica es: `Introducción a la Web`
 
 ## Marco teórico
 ### HTTP Methods
+El protocolo HTTP (The Hypertext Transfer Protocol) trabaja como un protocolo de pedido-respuesta entre el cliente y servidor.
 
-- Introducción
+El navegador web puede ser el cliente y la computadora que almacena la página web puede ser un servidor.
 
-  El protocolo HTTP (The Hypertext Transfer Protocol) trabaja como un protocolo de pedido-respuesta entre el cliente y servidor.
+De esta forma se presentan los siguientes métodos de petición:
 
-  El navegador web puede ser el cliente y la computadora que almacena la página web puede ser un servidor.
+### Más usados
+#### GET
 
-  De esta forma se presentan los siguientes métodos de petición:
+Solicita datos desde un recurso específico. Los valores clave-valor **son enviados en la URL** de la solicitud GET.
 
-* Más usados
-  - GET
+**Ejemplo clave:valor**
 
-    Solicita datos desde un recurso específico. Los valores clave-valor **son enviados en la URL** de la solicitud GET.
+`/test/view.php?id=001&section=1`
 
-    **Ejemplo clave:valor**
+#### POST
 
-    `/test/view.php?id=001&section=1`
+Envía datos a ser procesados a un recurso específico. Los valores clave-valor **son enviados dentro del cuerpo del mensaje HTTP** de una petición POST.
 
-  - POST
+**Ejemplo clave:valor**
 
-    Envía datos a ser procesados a un recurso específico. Los valores clave-valor **son enviados dentro del cuerpo del mensaje HTTP** de una petición POST.
+```
+POST /test/view.php HTTP/1.1
+HOST: pagina.com
+id=001&seccion=1
+```
 
-    **Ejemplo clave:valor**
+### Otros
+#### HEAD
+Igual que GET pero solo retorna la cabecera del HTTP y no el cuerpo del documento.
 
-    ```
-    POST /test/view.php HTTP/1.1
-    HOST: pagina.com
-    id=001&seccion=1
-    ```
-* Otros
-  - HEAD
+#### PUT
+Carga un representación de un URI especificado.
 
-    Igual que GET pero solo retorna la cabecera del HTTP y no el cuerpo del documento.
-  - PUT
+#### DELETE
+Elimina un recurso especificado.
 
-    Carga un representación de un URI especificado.
-  - DELETE
+#### OPTIONS
+Retorna los métodos HTTP que el servidor soporta.
 
-    Elimina un recurso especificado.
-  - OPTIONS
+#### CONNECT
+Convierte una conexión de petición en un túnel TCP/IP transparente.
 
-    Retorna los métodos HTTP que el servidor soporta.
-  - CONNECT
-
-    Convierte una conexión de petición en un túnel TCP/IP transparente.
+(Fuente: [w3schools](http://www.w3schools.com/tags/ref_httpmethods.asp))
 
 ### Códigos HTTP
+Los códigos HTTP son códigos de estado de una respuesta, el primer dígito especifica una de las cinco clases de respuesta.
+
+#### Clases de respuesta
+- 1xx Respuestas informativas
+  Peticiones recibidas, continuando proceso.
+- 2xx Peticiones correctas
+  Peticiones recibidas fue correctamente entendida y aceptada
+- 3xx Redireccciones
+  El cliente debe tomar una acción adicional para completar la petición.
+- 4xx Errores del cliente
+  La solicitud contiene sintaxis incorrecta o no puede procesarse.
+- 5xx Errores de servidor
+  El servidor falló al completar una solicitud aparentemente válida.
+
+(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
+
 ### Navegador web
+
+
 ### WWW
 ### W3C
 ### W3C Schools
