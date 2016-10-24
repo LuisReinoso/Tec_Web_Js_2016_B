@@ -12,6 +12,8 @@
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `1`
 
+---
+
 ## Índice de contenidos
 - Tema
 - Objetivos
@@ -40,7 +42,7 @@
 - Conclusiones y recomendaciones
 
 ## Tema
-El tema de la práctica es: `Introduccion a la Web`
+El tema de la práctica es: `Introducción a la Web`
 
 ## Objetivos
 - Desarrollar el conocimiento Web
@@ -49,6 +51,52 @@ El tema de la práctica es: `Introduccion a la Web`
 
 ## Marco teórico
 ### HTTP Methods
+
+- Introducción
+
+  El protocolo HTTP (The Hypertext Transfer Protocol) trabaja como un protocolo de pedido-respuesta entre el cliente y servidor.
+
+  El navegador web puede ser el cliente y la computadora que almacena la página web puede ser un servidor.
+
+  De esta forma se presentan los siguientes métodos de petición:
+
+* Más usados
+  - GET
+
+    Solicita datos desde un recurso específico. Los valores clave-valor **son enviados en la URL** de la solicitud GET.
+
+    **Ejemplo clave:valor**
+
+    `/test/view.php?id=001&section=1`
+
+  - POST
+
+    Envía datos a ser procesados a un recurso específico. Los valores clave-valor **son enviados dentro del cuerpo del mensaje HTTP** de una petición POST.
+
+    **Ejemplo clave:valor**
+
+    ```
+    POST /test/view.php HTTP/1.1
+    HOST: pagina.com
+    id=001&seccion=1
+    ```
+* Otros
+  - HEAD
+
+    Igual que GET pero solo retorna la cabecera del HTTP y no el cuerpo del documento.
+  - PUT
+
+    Carga un representación de un URI especificado.
+  - DELETE
+
+    Elimina un recurso especificado.
+  - OPTIONS
+
+    Retorna los métodos HTTP que el servidor soporta.
+  - CONNECT
+
+    Convierte una conexión de petición en un túnel TCP/IP transparente.
+
 ### Códigos HTTP
 ### Navegador web
 ### WWW
