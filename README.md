@@ -273,7 +273,7 @@ contenidoUlWeb.png
 contenidoOl.png
 contenidoOlWeb.png
 
-  emmet `ol>li*3 + tab`
+  emmet `ol>li*3 + tab`md
 
 - Agregado enlace referencia `<a>`
 contenidoA.png
