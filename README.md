@@ -13,43 +13,46 @@
 ### Número de informe : `1`
 
 ---
-
+<a name="cabecera"></a>
 ## Índice de contenidos
-- Tema
-- Objetivos
-- Marco teórico
-  - HTTP Methods
-  - Códigos HTTP
-  - Navegador web
-  - WWW
-  - W3C
-  - W3C Schools
-  - Doctype
-  - HTML
-  - Estilos CSS
-  - Herramienta inspeccionar
-  - Postman
-  - NPM (Node Package Manger)
-  - XML
-  - Tags
-    - h1
-    - h2
-    - p
-    - ul
-    - ol
-    - li
-- Desarrollo de la práctica
-- Conclusiones y recomendaciones
+- <a href="#tema">Tema</a>
+- <a href="#objetivos">Objetivos</a>
+- <a href="#marcoTeorico">Marco teórico</a>
+  - <a href="#metodosHTTP">HTTP Methods</a>
+  - <a href="#codigosHTTP">Códigos HTTP</a>
+  - <a href="#navegadorWeb">Navegador web</a>
+  - <a href="#www">WWW</a>
+  - <a href="#w3c">W3C</a>
+  - <a href="#w3cSchools">W3C Schools</a>
+  - <a href="#doctype">Doctype</a>
+  - <a href="#html">HTML</a>
+  - <a href="#estilosCSS">Estilos CSS</a>
+  - <a href="#herramientaInspeccionar">Herramienta inspeccionar</a>
+  - <a href="#postman">Postman</a>
+  - <a href="#npm">NPM (Node Package Manger)</a>
+  - <a href="#xml">XML</a>
+  - <a href="#tags">Tags</a>
+    - <a href="#cabeceras">cabeceras</a>
+    - <a href="#p">p</a>
+    - <a href="#ul">ul</a>
+    - <a href="#ol">ol</a>
+    - <a href="#li">li</a>
+- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
+- <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
 
+<a name="tema"></a>
 ## Tema
 El tema de la práctica es: `Introducción a la Web`
 
+<a name="objetivos"></a>
 ## Objetivos
 - Desarrollar el conocimiento Web
 - Conocer herramientas de desarrolladores web como: postman, inspetor web
 - Aprender el uso de lenguaje HTML CSS
 
+<a name="marcoTeorico"></a>
 ## Marco teórico
+<a name="metodosHTTP"></a>
 ### HTTP Methods
 El protocolo HTTP (The Hypertext Transfer Protocol) trabaja como un protocolo de pedido-respuesta entre el cliente y servidor.
 
@@ -96,6 +99,7 @@ Convierte una conexión de petición en un túnel TCP/IP transparente.
 
 (Fuente: [w3schools](http://www.w3schools.com/tags/ref_httpmethods.asp))
 
+<a name="codigosHTTP"></a>
 ### Códigos HTTP
 Los códigos HTTP son códigos de estado de una respuesta, el primer dígito especifica una de las cinco clases de respuesta.
 
@@ -113,26 +117,31 @@ Los códigos HTTP son códigos de estado de una respuesta, el primer dígito esp
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
 
+<a name="navegadorWeb"></a>
 ### Navegador web
 Un navegador web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Navegador_web))
 
+<a name="www"></a>
 ### WWW
 En informática, la World Wide Web (WWW) o red informática mundial es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
 
+<a name="w3c"></a>
 ### W3C
 El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium))
 
+<a name="w3schools"></a>
 ### W3C Schools
 W3Schools es un sitio de desarrolladores web, con tutoriales y referencias sobre lenguajes de desarrollo web como HTML, CSS, JavaScript, PHP, SQL y Bootstrap, que cubre la mayoría de los aspectos de la programación web.
 
 (Fuente: [w3schools](http://www.w3schools.com/about/))
 
+<a name="doctype"></a>
 ### Doctype
 Una declaración de tipo de documento o DOCTYPE, es una instrucción que asocia un SGML o documento XML con una definición de tipo de documento (DTD) (por ejemplo, la definición formal de una versión particular de HTML1.0 - HTML 4.0).
 
@@ -140,6 +149,7 @@ En la forma serializada de un documento, este se manifiesta como una cadena cort
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Declaraci%C3%B3n_de_tipo_de_documento))
 
+<a name="html"></a>
 ### HTML
 HTML es el lenguaje de marcado estándar para la creación de páginas Web.
 
@@ -151,6 +161,7 @@ HTML es el lenguaje de marcado estándar para la creación de páginas Web.
 
 (Fuente: [w3schools](http://www.w3schools.com/html/html_intro.asp))
 
+<a name="estilosCSS"></a>
 ### Estilos CSS
 Cascading Style Sheets (CSS) describe cómo son los elementos HTML que se mostrará en la pantalla.
 
@@ -163,46 +174,56 @@ CSS se puede añadir a los elementos HTML de 3 formas:
 
 (Fuente: [w3schools](http://www.w3schools.com/html/html_css.asp))
 
+<a name="herramientaInspeccionar"></a>
 ### Herramienta inspeccionar
 Chrome Inspector es una herramienta complementaria de desarrollo web que se usa específicamente para solucionar problemas de código de páginas web en el navegador Chrome.
 
 (Fuente: [Google support](https://support.google.com/richmedia/answer/6062390?hl=es))
 
+<a name="postman"></a>
 ### Postman
 Postman es la navaja suiza de las herramientas API, lo que permite diseñar, construir, probar, documentar y monitorear servicios, todo en un solo lugar. Postman está disponible para Chrome, Mac OS X y Windows.
 
 (Fuente: [Postman](https://www.getpostman.com/))
 
+<a name="npm"></a>
 ### NPM (Node Package Manger)
 NPM (Node Package Manger) es el gestor de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Npm))
 
+<a name="xml"></a>
 ### XML
 XML, siglas en inglés de eXtensible Markup Language ("lenguaje de marcas Extensible"), es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium (W3C) utilizado para almacenar datos en forma legible.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Extensible_Markup_Language))
 
+<a name="tags"></a>
 ### Tags
+<a name="cabeceras"></a>
 #### h1 - h6
 Las etiquetas `<h1>` a `<h6>` son usadas para definir títulos HTML.
 `<h1>` define el más importante título. `<h6>` define el título menos importante.
 
+<a name="p"></a>
 #### p
 La etiqueta `<p>` define un párrafo.
 
 Los navegadores automáticamente agregan algo de espacio (margin) antes y después de cada elemento `<p>`. Los margenes pueden ser modificados con CSS (con las propiedades de margen).
 
+<a name="ul"></a>
 #### ul
 La etiqueta `<ul>` define una lista no ordenada (bulleted).
 
 Usa la etiqueta `<ul>` junto con la etiqueta `<li>` para crear un lista no ordenada.
 
+<a name="ol"></a>
 #### ol
 La etiqueta `<ol>` define  una lista ordenada. Una lista ordenada puede ser numérica o alfabética.
 
 Usa la etiqueta `<li>` para definir una lista de elementos.
 
+<a name="li"></a>
 #### li
 La etiqueta  `<li>` define un elemento de una lista.
 
@@ -210,6 +231,7 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 
 (Fuente: [w3schools](http://www.w3schools.com/tags/))
 
+<a name="desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
 ### Instalación programas necesarios
 - Navegador web Chrome
@@ -271,6 +293,7 @@ pokemonGET.png
 - Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
 pokemonPOST.png
 
+<a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
 - El desarrollo de las directrices para la web se encuentra desarrollada por la W3C, la cual está precedida por el creador de la WWW, que a su vez promueve el uso de la web semántica.
 - La base de la web usa el protocolo HTTP y a través de los métodos GET y POST permite interactuar con los servidores web.
