@@ -185,7 +185,7 @@ XML, siglas en inglés de eXtensible Markup Language ("lenguaje de marcas Extens
 
 ### Tags
 #### h1 - h6
-Las etiquetas ``<h1>`` a ``<h6>`` son usadas para definir títulos HTML.
+Las etiquetas `<h1>` a `<h6>` son usadas para definir títulos HTML.
 `<h1>` define el más importante título. `<h6>` define el título menos importante.
 
 #### p
@@ -211,4 +211,60 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 (Fuente: [w3schools](http://www.w3schools.com/tags/))
 
 ## Desarrollo de la práctica
+### Instalación programas necesarios
+- Navegador web Chrome
+- Postman Chrome plugin
+- Editor Brackets
+- Emmet
+
+### Esquema HTML base
+- Creación de documento html que contenga los elementos base del cuerpo de un HTML.
+baseHTML.png
+
+  emmet `! + tab`
+
+- Agregado estilos CSS Inline
+cssInline.png
+cssInlineNavegador.png
+
+- Agregado contenido dentro de etiqueta `<p>`
+contenidoP.png
+contenidoPWeb.png
+
+- Agregado imagen `<img>`
+contenidoImg.png
+contenidoImgWeb.png
+
+  emmet `img + tab`
+
+- Agregado lista no ordenada `<ul>`
+contenidoUl.png
+contenidoUlWeb.png
+
+  emmet `ul>li*3 + tab`
+
+- Agregado lista ordenada `<ol>`
+contenidoOl.png
+contenidoOlWeb.png
+
+  emmet `ol>li*3 + tab`
+
+- Agregado enlace referencia `<a>`
+contenidoA.png
+contenidoAWeb.png
+
+  emmet `a + tab`
+
+- Agregado enlace a imagen `<a><img>`
+contenidoImgEnlace.png
+
+### Postman
+#### GET request
+- Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
+pokemonGET.png
+
+#### POST request
+- Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
+pokemonPOST.png
+
 ## Conclusiones y recomendaciones
