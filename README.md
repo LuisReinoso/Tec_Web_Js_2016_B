@@ -49,7 +49,7 @@ El tema de la práctica es: `Introducción a la Web`
 - Desarrollar el conocimiento Web
 - Conocer herramientas de desarrolladores web como: postman, inspetor web
 - Aprender el uso de lenguaje HTML CSS
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="marcoTeorico"></a>
@@ -100,7 +100,7 @@ Retorna los métodos HTTP que el servidor soporta.
 Convierte una conexión de petición en un túnel TCP/IP transparente.
 
 (Fuente: [w3schools](http://www.w3schools.com/tags/ref_httpmethods.asp))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="codigosHTTP"></a>
@@ -120,7 +120,7 @@ Los códigos HTTP son códigos de estado de una respuesta, el primer dígito esp
   El servidor falló al completar una solicitud aparentemente válida.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="navegadorWeb"></a>
@@ -128,7 +128,7 @@ Los códigos HTTP son códigos de estado de una respuesta, el primer dígito esp
 Un navegador web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Navegador_web))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="www"></a>
@@ -136,7 +136,7 @@ Un navegador web (en inglés, web browser) es un software, aplicación o program
 En informática, la World Wide Web (WWW) o red informática mundial es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="w3c"></a>
@@ -144,7 +144,7 @@ En informática, la World Wide Web (WWW) o red informática mundial es un sistem
 El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="w3schools"></a>
@@ -152,7 +152,7 @@ El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio i
 W3Schools es un sitio de desarrolladores web, con tutoriales y referencias sobre lenguajes de desarrollo web como HTML, CSS, JavaScript, PHP, SQL y Bootstrap, que cubre la mayoría de los aspectos de la programación web.
 
 (Fuente: [w3schools](http://www.w3schools.com/about/))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="doctype"></a>
@@ -162,7 +162,7 @@ Una declaración de tipo de documento o DOCTYPE, es una instrucción que asocia 
 En la forma serializada de un documento, este se manifiesta como una cadena corta de caracteres de marcado (markup) que se conforma con una sintaxis particular.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Declaraci%C3%B3n_de_tipo_de_documento))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="html"></a>
@@ -176,7 +176,7 @@ HTML es el lenguaje de marcado estándar para la creación de páginas Web.
 - Los navegadores no muestran las etiquetas HTML, pero los utilizan para representar el contenido de la página
 
 (Fuente: [w3schools](http://www.w3schools.com/html/html_intro.asp))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="estilosCSS"></a>
@@ -191,7 +191,7 @@ CSS se puede añadir a los elementos HTML de 3 formas:
 - Externo - mediante el uso de un archivo CSS externo.
 
 (Fuente: [w3schools](http://www.w3schools.com/html/html_css.asp))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="herramientaInspeccionar"></a>
@@ -199,7 +199,7 @@ CSS se puede añadir a los elementos HTML de 3 formas:
 Chrome Inspector es una herramienta complementaria de desarrollo web que se usa específicamente para solucionar problemas de código de páginas web en el navegador Chrome.
 
 (Fuente: [Google support](https://support.google.com/richmedia/answer/6062390?hl=es))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="postman"></a>
@@ -207,7 +207,7 @@ Chrome Inspector es una herramienta complementaria de desarrollo web que se usa 
 Postman es la navaja suiza de las herramientas API, lo que permite diseñar, construir, probar, documentar y monitorear servicios, todo en un solo lugar. Postman está disponible para Chrome, Mac OS X y Windows.
 
 (Fuente: [Postman](https://www.getpostman.com/))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="npm"></a>
@@ -215,7 +215,7 @@ Postman es la navaja suiza de las herramientas API, lo que permite diseñar, con
 NPM (Node Package Manger) es el gestor de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Npm))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="xml"></a>
@@ -223,7 +223,7 @@ NPM (Node Package Manger) es el gestor de paquetes por defecto para Node.js, un 
 XML, siglas en inglés de eXtensible Markup Language ("lenguaje de marcas Extensible"), es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium (W3C) utilizado para almacenar datos en forma legible.
 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Extensible_Markup_Language))
----
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="tags"></a>
@@ -258,7 +258,7 @@ La etiqueta  `<li>` define un elemento de una lista.
 La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<ul>` y un lista de menú `<menu>`.
 
 (Fuente: [w3schools](http://www.w3schools.com/tags/))
----
+
 <a href="#cabecera">A la cabecera</a>
 <a name="desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
@@ -364,7 +364,6 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 <img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/pokemonPOST.png?raw=true" alt="Muestra ejemplo de solicitud GET utilizando el software postman" title="pokemon POST"/>
 </p>
 
----
 <a href="#cabecera">A la cabecera</a>
 <a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
