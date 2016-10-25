@@ -270,57 +270,100 @@ La etiqueta `<li>` es usada para una lista ordenada `<ol>`, lista no ordenada `<
 
 ### Esquema HTML base
 - Creación de documento html que contenga los elementos base del cuerpo de un HTML.
-baseHTML.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/baseHTML.png?raw=true" alt="Muestra codigo base de HTML" title="base HTML"/>
+</p>
 
   emmet `! + tab`
 
   mediante el uso de la herramienta inspector se puede diferenci  ar cada uno de los elementos.
 
-inspector.png
+  <p align="center">
+  <img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/inspector.png?raw=true" alt="Muestra parte de la funcionalidad de inspector" title="inspector"/>
+  </p>
 
 - Agregado estilos CSS Inline
-cssInline.png
-cssInlineNavegador.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/cssInline.png?raw=true" alt="Muestra ejemplo de css inline" title="css inline"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/cssInlineNavegador.png?raw=true" alt="Muestra ejemplo de css inline en un navegador web" title="css inline en navegador web"/>
+</p>
 
 - Agregado contenido dentro de etiqueta `<p>`
-contenidoP.png
-contenidoPWeb.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoP.png?raw=true" alt="Muestra ejemplo de etiqueta p" title="etiqueta p"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoPWeb.png?raw=true" alt="Muestra ejemplo de etiqueta p en un navegador web" title="etiqueta p en navegador web"/>
+</p>
 
 - Agregado imagen `<img>`
-contenidoImg.png
-contenidoImgWeb.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImg.png?raw=true" alt="Muestra ejemplo de etiqueta img" title="etiqueta img"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImgWeb.png?raw=true" alt="Muestra ejemplo de etiqueta img en un navegador web" title="etiqueta img en navegador web"/>
+</p>
 
   emmet `img + tab`
 
 - Agregado lista no ordenada `<ul>`
-contenidoUl.png
-contenidoUlWeb.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoUl.png?raw=true" alt="Muestra ejemplo de etiqueta ul" title="etiqueta ul"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoUlWeb.png?raw=true" alt="Muestra ejemplo de etiqueta ul en navegador web" title="etiqueta ul en navegador web"/>
+</p>
 
   emmet `ul>li*3 + tab`
 
 - Agregado lista ordenada `<ol>`
-contenidoOl.png
-contenidoOlWeb.png
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoOl.png?raw=true" alt="Muestra ejemplo de etiqueta ol" title="etiqueta ol"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoOlWeb.png?raw=true" alt="Muestra ejemplo de etiqueta ol en navegador web" title="etiqueta ol en navegador web"/>
+</p>
 
   emmet `ol>li*3 + tab`
 
 - Agregado enlace referencia `<a>`
-contenidoA.png
-contenidoAWeb.png
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoA.png?raw=true" alt="Muestra ejemplo de etiqueta a" title="etiqueta a"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoAWeb.png?raw=true" alt="Muestra ejemplo de etiqueta a en navegador web" title="etiqueta a en navegador web"/>
+</p>
 
   emmet `a + tab`
 
 - Agregado enlace a imagen `<a><img>`
-contenidoImgEnlace.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/contenidoImgEnlace.png?raw=true" alt="Muestra ejemplo de etiqueta a con img en navegador web" title="etiqueta a con img en navegador web"/>
+</p>
 
 ### Postman
 #### GET request
 - Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
-pokemonGET.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/pokemonGET.png?raw=true" alt="Muestra ejemplo de solicitud GET utilizando el software postman" title="pokemon GET"/>
+</p>
 
 #### POST request
 - Solicitud del primer pokemon `http://pokeapi.co/api/v2/pokemon/1/`
-pokemonPOST.png
+<p align="center">
+<img src="https://github.com/LuisReinoso/Tec_Web_Js_2016_B/blob/01-HTML/Graficos/pokemonPOST.png?raw=true" alt="Muestra ejemplo de solicitud GET utilizando el software postman" title="pokemon POST"/>
+</p>
+
 ---
 <a href="#cabecera">A la cabecera</a>
 <a name="conclusionesYRecomendaciones"></a>
