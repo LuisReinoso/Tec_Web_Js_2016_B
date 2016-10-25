@@ -4,14 +4,71 @@
 <head>
   <meta charset="utf-8">
   <title> Aprendiendo CSS </title>
-  <link rel="stylesheet" href="/CSS/estilos.css">
-  <link rel="stylesheet" href="/CSS/estilos1.css">
-  <link rel="stylesheet" href="/CSS/estilos2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
     <h1>Hola</h1>
+    <!-- .container -->
+    <div class="container" style="background-color:#687fd4;">
+        
+    <!-- .row*3>h1-->
+    <div class="row" style="background-color:green;">
+        <h1>Fila1</h1>
+    </div>
+    <div class="row" style="background-color:blue;">
+        <h1>Fila2</h1>
+    </div>
+    <div class="row" style="background-color:yellow;">
+        <h1>Fila3</h1>
+    </div>
+    
+     <h1>Hola estoy dentro del div</h1>    
+    
+<!--
+      Columnas
+      1 1 1 1 1 1 1 1 1 1 1 1 = 12    
+-->    
+    
+<!--    .col-md-4*3>h2  -->
+   
+   <style>
+   
+       .borde {
+           border-style: solid;
+       }
+       
+   </style>
+   
+   <div class="col-md-4 borde">
+       <h2>Columna md4-1</h2>
+   </div>
+   <div class="col-md-4 borde">
+       <h2>Columna md4-2</h2>
+       <div class="col-sm-3 borde">
+           <h3>CSM2-1</h3>
+       </div>
+       <div class="col-sm-3 borde">
+           <h3>CSM2-2</h3>
+       </div>
+       <div class="col-sm-3 borde">
+           <h3>CSM2-3</h3>
+       </div>
+       <div class="col-sm-3 borde">
+           <h3>CSM2-4</h3>
+       </div>
+   </div>
+   <div class="col-md-4 borde">
+       <h2>Columna md4-3</h2>
+       
+       .col-lg-6.borde*3>
+       
+   </div>
+    
+    
+    </div>
     <p class="nombreClaseRojo">Parrafo</p>
     <h1 class ="nombreClaseAzul">Amigos</h1>
     <p id="parrafoDeAmarillo" class="nombreClaseVerde">Parrafo 2</p>
