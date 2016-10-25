@@ -223,6 +223,10 @@ baseHTML.png
 
   emmet `! + tab`
 
+  mediante el uso de la herramienta inspector se puede diferenci  ar cada uno de los elementos.
+
+inspector.png
+
 - Agregado estilos CSS Inline
 cssInline.png
 cssInlineNavegador.png
@@ -268,3 +272,7 @@ pokemonGET.png
 pokemonPOST.png
 
 ## Conclusiones y recomendaciones
+- El desarrollo de las directrices para la web se encuentra desarrollada por la W3C, la cual está precedida por el creador de la WWW, que a su vez promueve el uso de la web semántica.
+- La base de la web usa el protocolo HTTP y a través de los métodos GET y POST permite interactuar con los servidores web.
+- La herramientas web postman permite realizar diferentes solicitudes HTTP a un servidor web y de esta forma comprender como reacciona el servidor ante dichas solicitudes.
+- El documento HMTL generado en la práctica es interpretado en el navegador web a través de las etiquetas de DOCTYPE, la cual indica el tiempo de lenguaje de marcas a ser usado.
