@@ -51,13 +51,16 @@
             mascota: ['Cachetes', 'a'],
             funcion: function () {
              console.log(persona.nombre);
+            },
+            setNombre: function ($var) {
+              this.nombre = $var;
             }
             //hermano: [{nombre:'A'}];   
         }
         
         console.log(persona);
         
-        //Agregado funciones
+        //Agregado funciones get
         function getNombre() {
             console.log(persona.nombre);
         }
@@ -65,15 +68,18 @@
         
         
         //Retorno de valor nombre
-        
         function getNombreReturn() {
             return persona.nombre;
         }
         
         console.log(getNombreReturn());
-        
-        
         console.log(persona.funcion);
+        
+        //Funcion set
+        persona.setNombre('test');
+        
+        console.log(persona.nombre);
+        
         
         //Objeto en XML
         /**
