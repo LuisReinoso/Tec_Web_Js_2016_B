@@ -1,11 +1,2 @@
-# Clase 1
+# Clase Javascript
 
-## Levantar servidor web
-
-```
-> npm install -g 
-```
-
-```
-
-```
