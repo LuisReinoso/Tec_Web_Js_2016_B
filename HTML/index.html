@@ -29,7 +29,6 @@
         console.log(textoNumero);
         
         //arreglos
-        
         var arreglo = ['esto es un arreglo','2','3'];
         console.log("imprimir arreglo");
         
@@ -47,9 +46,28 @@
         //Objetos
         var persona = {
             'nombre':'Luis',
-            'apellido':'Reinoso';
+            'apellido':'Reinoso',
+            edad: 24,
+            mascota: ['Cachetes', 'a']
+            //hermano: [{nombre:'A'}];   
         }
         
+        console.log(persona);
+        
+        //Agregado funciones
+        function getNombre() {
+            console.log(persona.nombre);
+        }
+        getNombre();
+        
+        //Objeto en XML
+        /**
+        <persona>
+            <nombre>Luis</nombre>
+            <apellido>Reinoso</apellido>
+            <edad>24</edad>
+        </persona>
+        */
     </script>
             
 </body>
