@@ -48,7 +48,10 @@
             'nombre':'Luis',
             'apellido':'Reinoso',
             edad: 24,
-            mascota: ['Cachetes', 'a']
+            mascota: ['Cachetes', 'a'],
+            funcion: function () {
+             console.log(persona.nombre);
+            }
             //hermano: [{nombre:'A'}];   
         }
         
@@ -68,6 +71,9 @@
         }
         
         console.log(getNombreReturn());
+        
+        
+        console.log(persona.funcion);
         
         //Objeto en XML
         /**
