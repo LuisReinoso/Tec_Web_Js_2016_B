@@ -51,9 +51,17 @@
 ---
 
 ## Tema
+CSS
+
 ## Objetivos
+- Aprender los conceptos fundamentales de CSS
+- Comprender la funcionalidad de CSS
+- Agregar estilos a las paginas web
+
 ## Marco teorico
 ### CSS
+
+
 ### Selectores
 #### Elemento
 #### Identificador
