@@ -13,3 +13,24 @@
 ### Número de informe : `3`
 
 ---
+## Índice de contenidos
+- Tema
+- Objetivos
+- Marco teórico
+  - Mimificar
+  - ISP
+  - Diseño web
+  - Calidad web
+  - WAI
+  - Validacion
+    - w3c Markup Validation Service
+  - SEO
+  - CDN
+  - Bootstrap
+    - Mobile-first
+    - Contenedores
+    - Sistema de grids
+    - Formularios
+    - Tablas
+- Desarrollo de la práctica
+- Conclusiones y recomendaciones
