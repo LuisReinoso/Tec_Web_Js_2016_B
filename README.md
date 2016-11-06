@@ -304,4 +304,73 @@ Existen diferentes valores: `duration`, `delay`.
 (Fuente: [w3schools](http://www.w3schools.com/cssref/css3_pr_transition.asp))
 
 ## Desarrollo de la practica
+Agregado estilos dentro de html
+
+``` html
+<head>
+  <meta charset="utf-8">
+  <title> Aprendiendo CSS </title>
+  <style>
+    /*
+      //TAGS
+      nombreTag {
+      Propiedad1:valorPropiedad1;
+      Propiedad2:valorPropiedad2;
+      }
+      */
+      html{
+        background-color: #687fd4;
+      }
+
+      body {
+          background-color: #687fd4;
+      }
+
+      h1 {
+          background-color: #68d487;
+      }
+
+    /* nombrePropiedad:valorPropiedad; */
+    </style>
+</head>
+```
+#TODO:htmlCSS
+
+Agregado uso selector por clases
+``` html
+html {
+   background-color: #687fd4;
+   background-color: #687fd4;
+ }
+
+ p {
+          background-color: #15754c;
+      }
+
+      /*
+      // CLASES
+      .nombreClase {
+
+      }      
+      */
+```
+#TODO:clasesCSS
+
+Agregado uso selector por identificador
+``` html
+ <p id="parrafoDeAmarillo" class="nombreClaseVerde">Parrafo 2</p>
+```
+#TODO:identificadorCSS
+
+Agregado estilos externos CSS
+``` html
+<link rel="stylesheet" href="/CSS/estilos.css">
+<link rel="stylesheet" href="/CSS/estilos1.css">
+<link rel="stylesheet" href="/CSS/estilos2.css">
+```
+#TODO:externoCSS
+
 ## Conclusiones y recomendaciones
+- Separar la forma en como la información es desplegada a través del CSS permite desacoplar el trabajo y la lógica de las aplicaciones web.
+- La potencialidad de CSS3 permite ahora realizar animaciones e incluso menú desplegables, equiparando usos de JavaScript.
+- Las el funcionamiento de las propiedades de CSS dependen de interprete (navegador), para ello es necesario saber que tipo navegadores acepta la propiedades utilizadas con la finalidad de los estilos aplicados sean multiplataforma.
