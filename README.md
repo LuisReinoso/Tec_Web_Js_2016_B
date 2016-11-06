@@ -13,3 +13,72 @@
 ### Número de informe : `2`
 
 ---
+
+## Índice de contenidos
+- Tema
+- Objetivos
+- Marco teórico
+  - CSS
+  - Selectores
+    - Elemento
+    - Identificador
+    - Clase
+    - Agrupamiento
+    - Comentarios
+  - Formas de agregar CSS
+    - Interno
+    - Externo
+    - En linea
+  - Multiples hojas de estilo
+    - Orden en cascada
+  - Colores
+    - Nombres
+    - RGB
+    - Hexadecimal
+  - Modelo de caja
+    - Contenido
+    - Padding
+    - Border
+    - Margin
+  - Propiedades
+    - background-color
+    - border-style
+    - border-color
+    - transitions  
+- Desarrollo de la práctica
+- Conclusiones y recomendaciones
+
+---
+
+## Tema
+## Objetivos
+## Marco teorico
+### CSS
+### Selectores
+#### Elemento
+#### Identificador
+#### Clase
+#### Agrupamiento
+#### Comentarios
+### Formas de agregar CSS
+#### Interno
+#### Externo
+#### En linea
+### Multiples hojas de estilo
+#### Orden en cascada
+### Colores
+#### Nombres
+#### RGB
+#### Hexadecimal
+### Modelo de caja
+#### Contenido
+#### Padding
+#### Border
+#### Margin
+### Propiedades
+#### background-color
+#### border-style
+#### border-color
+#### transitions
+## Desarrollo de la practica
+## Conclusiones y recomendaciones
