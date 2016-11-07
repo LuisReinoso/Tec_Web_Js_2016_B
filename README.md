@@ -311,8 +311,13 @@ Agregado tablas y respectivos tamaños
 ```
 
 Agregado user inputs
+``` html
+<p> Esta web permite el uso de <kbd>ctrl</kbd> + <kbd>c</kbd></p>
+```
 
 Agregado tablas
+
+
 
 Agregado formulario
 
