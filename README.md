@@ -240,9 +240,6 @@ Agregado framework Bootstrap desde CDN
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 ```
@@ -309,11 +306,13 @@ Agregado tablas y respectivos tamaños
    </div>
 </div>
 ```
+#TODO:grids.png
 
 Agregado user inputs
 ``` html
 <p> Esta web permite el uso de <kbd>ctrl</kbd> + <kbd>c</kbd></p>
 ```
+#TODO:userInputs.png
 
 Agregado tablas
 Tabla simple
@@ -338,6 +337,8 @@ Tabla simple
  </tr>
 </table>
 ```
+#TODO:tablaSimple.png
+
 
 Tabla simple Boostrap
 ``` html
@@ -361,8 +362,9 @@ Tabla simple Boostrap
  </tr>
 </table>
 ```
+#TODO:tablaSimpleBootstrap.png
 
-Agregado colores a tabla hover simple
+Agregado colores a tabla striped
 ``` html
 <div class="container">
 <table class="table table-striped">
@@ -388,6 +390,7 @@ Agregado colores a tabla hover simple
 </table>
 </div>
 ```
+#TODO:tablaSimpleStripped.png
 
 Agregado colores a tabla hover simple colores contextuales
 ``` html
@@ -417,9 +420,34 @@ Agregado colores a tabla hover simple colores contextuales
 </table>
 </div>
 ```
+#TODO:tablaSimpleContextual.png
 
+Agregado formulario simple
+``` html
+<form>
+  <label>Usuario: </label>
+  <input type="text"></input>
+  <label>Contraseña: </label>
+  <input type="password"></input>
+</form>
+```
+#TODO:formularioSimple
 
-Agregado formulario
+Agregado formulario simple Boostrap
+``` html
+<!-- Agregado formulario simple Boostrap-->
+<form>
+  <div class="form-group">
+    <label>Usuario: </label>
+    <input type="text" class="form-control"></input>
+  </div>
+  <div class="form-group">
+    <label>Contraseña: </label>
+    <input type="password" class="form-control"></input>
+  </div>
+</form>
+```
+#TODO:formularioSimpleBootstrap.png
 
 ## Conclusiones y recomendaciones
 - Bootstrap es un framework que facilita y agiliza el desarrollo del front-end de una aplicación web.
