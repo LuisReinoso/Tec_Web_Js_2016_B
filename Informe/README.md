@@ -274,7 +274,9 @@ Ejemplo
 ### Modelo de caja
 Todos los elements HTML son considerdos como cajas, el modelo en caja CSS es escencial para envolver a los elementos CSS. Estos elementos son `Content`, `Padding`, `Border`, `Margin`.
 
-#TODO: Agregar imagen de modelo en caja
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/02-CSS/Informe/Graficos/modeloDeCaja.png" alt="Modelo en caja: content, padding, border, margin" title="Modelo en caja" />
+</p>
 
 ``` html
 elemento {
