@@ -13,38 +13,43 @@
 ### Número de informe : `3`
 
 ---
+<a name="cabecera"></a>
 ## Índice de contenidos
-- Tema
-- Objetivos
-- Marco teórico
-  - Mimificar
-  - ISP
-  - Diseño web
-  - Calidad web
-  - WAI
-  - Validacion
-    - W3C Markup Validation Service
-  - SEO
-  - CDN
-  - Bootstrap
-    - Mobile-first
-    - Contenedores
-    - Sistema de grids
-    - Formularios
-    - Tablas
-- Desarrollo de la práctica
-- Conclusiones y recomendaciones
+- <a href="#tema">Tema</a>
+- <a href="#objetivos">Objetivos</a>
+- <a href="#marcoTeorico">Marco teórico</a>
+  - <a href="#mimificar">Mimificar</a>
+  - <a href="#isp">ISP</a>
+  - <a href="#diseñoWeb">Diseño web</a>
+  - <a href="#calidadWeb">Calidad web</a>
+  - <a href="#wai">WAI</a>
+  - <a href="#validacion">Validacion</a>
+    - <a href="#w3cMarkupValidationService">W3C Markup Validation Service</a>
+  - <a href="#seo">SEO</a>
+  - <a href="#cdn">CDN</a>
+  - <a href="#bootstrap">Bootstrap</a>
+    - <a href="#mobile-first">Mobile-first</a>
+    - <a href="#contenedores">Contenedores</a>
+    - <a href="#sistemaDeGrids">Sistema de grids</a>
+    - <a href="#formularios">Formularios</a>
+    - <a href="#tablas">Tablas</a>
+- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
+- <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
 
 ---
-
+<a name="tema"></a>
 ## Tema
 Bootstrap
 
+<a name="objetivos"></a>
 ## Objetivos
 - Conocer los apectos básicos para una aplicación web.
 - Conocer el framework Bootstrap.
 
+<a name="marcoTeorico"></a>
 ## Marco teórico
+
+<a name="mimificar"></a>
 ### Mimificar
 Es el proceso en el cual se remueve todas los caracteres innecesarios del código fuente sin realizar cambios en su funcionalidad. Los caracteres innecesarios pueden ser: espacios en blanco, caracteres de nueva linea, comentarios.
 
@@ -52,6 +57,9 @@ Esto es un tipo de ofuscación y se hace con la finaliad de comprimir los datos 
 
 (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Minification_(programming)))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="isp"></a>
 ### ISP
 El Internet Service Provider es la organización que provee de acceso y uso a Internet, existen de diferente naturaleza y los servicios que ofrece son:
 - Acceso a Internet
@@ -60,6 +68,9 @@ El Internet Service Provider es la organización que provee de acceso y uso a In
 
 (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Internet_service_provider))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="diseñoWeb"></a>
 ### Diseño web
 El diseño web se compone de diferentes habilidades y características para la producción y mantenimiento de páginas web.
 
@@ -72,6 +83,9 @@ Este termino es usado normalmente para describir el proceso relacionado con el f
 
 (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Web_design))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="calidadWeb"></a>
 ### Calidad web
 La calidad de la web, es un conjunto de especificiones y guias de estilo con la finalidad de promover una web de mayor calidad.
 
@@ -84,10 +98,18 @@ La w3c tiene una división de aseguramiento de la calidad cuyos objetivos son:
 
 (Fuente: [W3C Quality Assurance](https://www.w3.org/QA/Activity.html))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="WAI"></a>
 ### WAI
 La Inicitiva de Accesibilidad a la Web o en inglés The Web Accessibility Initiative (WAI) desarrolla estrategias, directrices y recursos para ayudar a que la Web sea accesible para las personas con discapacidades.
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="validacion"></a>
 ### Validación
+
+<a name="w3cMarkupValidationService"></a>
 #### W3C Markup Validation Service
 Este servicio es un validador por la W3C que permite a los usuarios comprobar que los documentos HTML y XHTML se encuentre correctamente formateados. La validación es paso importante para asegurar la calidad téccnica de las páginas web.
 
@@ -97,6 +119,9 @@ Este servicio es un validador por la W3C que permite a los usuarios comprobar qu
 
 (Fuente:[Wikipedia](https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="seo"></a>
 ### SEO
 Search Engine Optimización o en español Optimización en motores de búsqueda. Es el proceso que afecta la visibilidad de un sitio web o página web dentro de un motor de búsqueda web. El SEO puede tener objetivos diferentes dependiendo del tipo de buscador.
 
@@ -104,6 +129,9 @@ Como una estratégia de marketing el SEO considera como los motores de búsqueda
 
 (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="cdn"></a>
 ### CDN
 Content Distribution Network ó Content Delivery Network, en español Red de Distribución de Contenidos, es una red ditribuida globlamente de servidores proxy desplegados en multiples centros de datos. El objetivo de un CDN es servir de contenidos a usuarios finales con alta disponibilidad y alto rendimiento.
 
@@ -114,6 +142,9 @@ Estos pueden servir:
 
 (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="bootstrap"></a>
 ### Bootstrap
 Bootstrap es un framework gratuito para el front-end rápido y facíl para el desarrollo web, este incluye plantillas de diseño basados en HTML y CSS para tipografía, formularios, botones, tablas, navegación, entre otros, asi también opcionalmente plugins JavaScript.
 
@@ -121,6 +152,9 @@ Este framework provee la habilidad de crear facilmente diseño responsivo.
 
 (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="mobile-first"></a>
 #### Mobile-first
 Este enfoque propone los estilos mobile-first como parte del nucleo del framework, es decir, este framework esta diseñado para ser responsivo con los dispositivos móviles.
 
@@ -137,6 +171,9 @@ Donde:
 
 (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="contenedores"></a>
 #### Contenedores
 Boostrap requiere un contenedor que tiene la finalidad de envolver los contenidos del sitio.
 
@@ -162,6 +199,9 @@ Los contenedores tiene dos clases:
 
 (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="sistemaDeGrids"></a>
 #### Sistema de grids
 Bootstrap provee un sistema de grids que permite hasta 12 columnas a lo largo de la página, sino se usa todas la columnas se las puede agrupar, creando así columnas mas anchas.
 
@@ -192,6 +232,9 @@ Algunos opciones
 
 (Fuente: [Bootstrap](http://www.oneskyapp.com/es/docs/bootstrap/css))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="formularios"></a>
 #### Formularios
 Los formularios HTML automaticamente reciben un estilo global, los elementos `<input>` con la clase `.form-control` y envueltos en un `.form-group` se encuentran con un ancho al 100% por defecto.
 
@@ -209,6 +252,9 @@ También existen formularios:
 
 (Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="tablas"></a>
 #### Tablas
 Las tablas utilizan la clase base `.table` y este pude ser agragado a cualquier etiqueta `<table>`.
 
@@ -233,6 +279,9 @@ Se puede utilizar clases contextuales para agragar colores a las tablas
 
 (Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
 Agregado framework Bootstrap desde CDN
 
@@ -263,38 +312,37 @@ Agregado tablas y respectivos tamaños
 }  
 </style>
 
+<div class="container">
 <div class="col-md-4 borde">
     <h2>Columna md4-1</h2>
 
-    <!-- .row>.col-xs-2.borde+.col-xs-5.borde*2 -->    
+    <!-- .row>.col-xs-2.borde+.col-xs-5.borde*2 -->
     <div class="row">
-        <div class="col-xs-2 borde">columna-xa-2-1</div>
-        <div class="col-xs-5 borde">columna-xa-2-2</div>
-        <div class="col-xs-5 borde">columna-xa-2-3</div>
+        <div class="col-xs-2 borde">columna-xs-2-1</div>
+        <div class="col-xs-3 borde">columna-xs-2-2</div>
+        <div class="col-xs-3 borde">columna-xs-2-3</div>
     </div>
 </div>
 
 <div class="col-md-4 borde">
     <h2>Columna md4-2</h2>
-    <div class="col-sm-3 borde">
-        <h3>CSM2-1</h3>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-1</h3>
     </div>
-    <div class="col-sm-3 borde">
-        <h3>CSM2-2</h3>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-2</h3>
     </div>
-    <div class="col-sm-3 borde">
-        <h3>CSM2-3</h3>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-3</h3>
     </div>
-    <div class="col-sm-3 borde">
-        <h3>CSM2-4</h3>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-4</h3>
     </div>
 </div>
-
 <div class="col-md-4 borde">
     <h2>Columna md4-3</h2>
 
-<!-- .col-lg-6.borde*3>h3 -->
-
+   <!-- .col-lg-6.borde*3>h3 -->
    <div class="col-lg-6 borde">
        <h3>col-lg-6-1</h3>
    </div>
@@ -449,8 +497,13 @@ Agregado formulario simple Boostrap
 ```
 #TODO:formularioSimpleBootstrap.png
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
 - Bootstrap es un framework que facilita y agiliza el desarrollo del front-end de una aplicación web.
 - Bootstrap provee al desarrollad@r una forma fácil de implementación de diseño responsivo.
 - Boostrap permite crear el front-end con criterios de calidad (diseño responsivo, accesibilidad).
 - Boostrap es recomendado por la W3C, lo cual indica que es un framework que cumple con los estándares propuestos por dicha organización.
+
+<a href="#cabecera">A la cabecera</a>
