@@ -41,8 +41,8 @@
 Bootstrap
 
 ## Objetivos
-- Conocer los apectos básicos para una aplicación web
-- Conocer el framework Bootstrap
+- Conocer los apectos básicos para una aplicación web.
+- Conocer el framework Bootstrap.
 
 ## Marco teórico
 ### Mimificar
@@ -218,6 +218,12 @@ Las tablas utilizan la clase base `.table` y este pude ser agragado a cualquier 
 </table>
 ```
 
+Tipos de tablas
+- `.table-striped`
+- `.table-bordered`
+- `.table-hover`
+- `.table-condensed`
+
 Se puede utilizar clases contextuales para agragar colores a las tablas
 -  `.active` Aplica el color de desplazamiento del ratón a una fila o celda específicas.
 -  `.success` Indica una acción exitosa o positiva.
@@ -228,6 +234,90 @@ Se puede utilizar clases contextuales para agragar colores a las tablas
 (Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
 ## Desarrollo de la práctica
+Agregado framework Bootstrap desde CDN
 
+``` html
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+```
+
+Agregado mobile-first
+``` html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Agregado contenedor
+``` html
+<!-- .container -->
+   <div class="container" style="background-color:#687fd4;">
+```
+
+Agregado tablas y respectivos tamaños
+``` html
+<style>
+.borde {
+  border-style: solid;
+}  
+</style>
+
+<div class="col-md-4 borde">
+    <h2>Columna md4-1</h2>
+
+    <!-- .row>.col-xs-2.borde+.col-xs-5.borde*2 -->    
+    <div class="row">
+        <div class="col-xs-2 borde">columna-xa-2-1</div>
+        <div class="col-xs-5 borde">columna-xa-2-2</div>
+        <div class="col-xs-5 borde">columna-xa-2-3</div>
+    </div>
+</div>
+
+<div class="col-md-4 borde">
+    <h2>Columna md4-2</h2>
+    <div class="col-sm-3 borde">
+        <h3>CSM2-1</h3>
+    </div>
+    <div class="col-sm-3 borde">
+        <h3>CSM2-2</h3>
+    </div>
+    <div class="col-sm-3 borde">
+        <h3>CSM2-3</h3>
+    </div>
+    <div class="col-sm-3 borde">
+        <h3>CSM2-4</h3>
+    </div>
+</div>
+
+<div class="col-md-4 borde">
+    <h2>Columna md4-3</h2>
+
+<!-- .col-lg-6.borde*3>h3 -->
+
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-1</h3>
+   </div>
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-2</h3>
+   </div>
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-3</h3>
+   </div>
+</div>
+```
+
+Agregado user inputs
+
+Agregado tablas
+
+Agregado formulario
 
 ## Conclusiones y recomendaciones
+- Bootstrap es un framework que facilita y agiliza el desarrollo del front-end de una aplicación web.
+- Bootstrap provee al desarrollad@r una forma fácil de implementación de diseño responsivo.
+- Boostrap permite crear el front-end con criterios de calidad (diseño responsivo, accesibilidad).
+- Boostrap es recomendado por la W3C, lo cual indica que es un framework que cumple con los estándares propuestos por dicha organización.
