@@ -354,13 +354,17 @@ Agregado tablas y respectivos tamaños
    </div>
 </div>
 ```
-#TODO:grids.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/grids.png" alt="grids demo bootstrap" title="grids" />
+</p>
 
 Agregado user inputs
 ``` html
 <p> Esta web permite el uso de <kbd>ctrl</kbd> + <kbd>c</kbd></p>
 ```
-#TODO:userInputs.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/userInputs.png" alt="uso de user inputs bootstrap" title="user inputs" />
+</p>
 
 Agregado tablas
 Tabla simple
@@ -385,8 +389,9 @@ Tabla simple
  </tr>
 </table>
 ```
-#TODO:tablaSimple.png
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/tablaSimple.png" alt="tabla simple" title="tabla simple" />
+</p>
 
 Tabla simple Boostrap
 ``` html
@@ -410,7 +415,9 @@ Tabla simple Boostrap
  </tr>
 </table>
 ```
-#TODO:tablaSimpleBootstrap.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/tablaSimpleBootstrap.png" alt="tabla simple bootstrap" title="tabla simple bootstrap" />
+</p>
 
 Agregado colores a tabla striped
 ``` html
@@ -438,7 +445,9 @@ Agregado colores a tabla striped
 </table>
 </div>
 ```
-#TODO:tablaSimpleStripped.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/tablaSimpleStripped.png" alt="tabla simple bootstrap stripped" title="tabla simple bootstrap stripped" />
+</p>
 
 Agregado colores a tabla hover simple colores contextuales
 ``` html
@@ -468,7 +477,9 @@ Agregado colores a tabla hover simple colores contextuales
 </table>
 </div>
 ```
-#TODO:tablaSimpleContextual.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/tablaSimpleContextual.png" alt="tabla simple bootstrap contextual" title="tabla simple bootstrap contextual" />
+</p>
 
 Agregado formulario simple
 ``` html
@@ -479,7 +490,10 @@ Agregado formulario simple
   <input type="password"></input>
 </form>
 ```
-#TODO:formularioSimple
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/formularioSimple.png" alt="formulario simple" title="formulario simple" />
+</p>
 
 Agregado formulario simple Boostrap
 ``` html
@@ -495,7 +509,10 @@ Agregado formulario simple Boostrap
   </div>
 </form>
 ```
-#TODO:formularioSimpleBootstrap.png
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/03-Bootstrap/Informe/Graficos/formularioSimpleBootstrap.png" alt="formulario simple bootstrap" title="formulario simple bootstrap" />
+</p>
 
 <a href="#cabecera">A la cabecera</a>
 
