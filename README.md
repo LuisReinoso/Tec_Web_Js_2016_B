@@ -362,9 +362,61 @@ Tabla simple Boostrap
 </table>
 ```
 
-Agregado colores a tabla simple
+Agregado colores a tabla hover simple
+``` html
+<div class="container">
+<table class="table table-striped">
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tbody>
+ <tr>
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <tr>
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+ <tbody>
+</table>
+</div>
+```
 
-
+Agregado colores a tabla hover simple colores contextuales
+``` html
+<div class="container">
+<table class="table table-striped">
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tbody>
+<!-- Agregado colores tabla -->
+ <tr class="warning">
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <!-- Agregado colores tabla -->
+ <tr class="success">
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+ <tbody>
+</table>
+</div>
+```
 
 
 Agregado formulario
