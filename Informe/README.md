@@ -6,11 +6,11 @@
 <img src="https://openclipart.org/image/300px/svg_to_png/168924/web-books.png&disposition=attachment" alt="Libros sobre la web" title="Libros sobre la web por cliparteles ( https://openclipart.org/user-detail/cliparteles)" />
 </p>
 
-### Tema : `CSS`
+### Tema : `Bootstrap`
 ### Fecha : `2016-11-06`
 ### Estudiante : `Luis Alberto Reinoso Calero`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `2`
+### Número de informe : `3`
 
 ---
 <a name="cabecera"></a>
@@ -18,431 +18,492 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marcoTeorico">Marco teórico</a>
-  - <a href="#css">CSS</a>
-  - <a href="#sintaxis">Sintaxis</a>
-  - <a href="#selectores">Selectores</a>
-    - <a href="#elemento">Elemento</a>
-    - <a href="#identifiador">Identificador</a>
-    - <a href="#clase">Clase</a>
-    - <a href="#agrupamiento">Agrupamiento</a>
-    - <a href="#comentarios">Comentarios</a>
-  - <a href="formasDeAgregarCss">Formas de agregar CSS</a>
-    - <a href="#interno">Interno</a>
-    - <a href="#externo">Externo</a>
-    - <a href="#enLinea">En linea</a>
-  - <a href="#multiplesHojasDeEstilo">Multiples hojas de estilo</a>
-    - <a href="#ordenEnCascada">Orden en cascada</a>
-  - <a href="#colores">Colores</a>
-    - <a href="#nombres">Nombres</a>
-    - <a href="#rgb">RGB</a>
-    - <a href="#hexadecimal">Hexadecimal</a>
-  - <a href="#modeloDeCaja">Modelo de caja</a>
-  - <a href="#propiedades">Propiedades</a>
-    - <a href="#background-color">background-color</a>
-    - <a href="#border-style">border-style</a>
-    - <a href="#border-color">border-color</a>
-    - <a href="#transitions">transitions</a>
+  - <a href="#mimificar">Mimificar</a>
+  - <a href="#isp">ISP</a>
+  - <a href="#diseñoWeb">Diseño web</a>
+  - <a href="#calidadWeb">Calidad web</a>
+  - <a href="#wai">WAI</a>
+  - <a href="#validacion">Validacion</a>
+    - <a href="#w3cMarkupValidationService">W3C Markup Validation Service</a>
+  - <a href="#seo">SEO</a>
+  - <a href="#cdn">CDN</a>
+  - <a href="#bootstrap">Bootstrap</a>
+    - <a href="#mobile-first">Mobile-first</a>
+    - <a href="#contenedores">Contenedores</a>
+    - <a href="#sistemaDeGrids">Sistema de grids</a>
+    - <a href="#formularios">Formularios</a>
+    - <a href="#tablas">Tablas</a>
 - <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
 - <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
 
 ---
 <a name="tema"></a>
 ## Tema
-CSS
+Bootstrap
 
 <a name="objetivos"></a>
 ## Objetivos
-- Aprender los conceptos fundamentales de CSS
-- Comprender la funcionalidad de CSS
-- Agregar estilos a las paginas web
+- Conocer los apectos básicos para una aplicación web.
+- Conocer el framework Bootstrap.
 
 <a name="marcoTeorico"></a>
-## Marco teorico
-<a name="css"></a>
-### CSS
-CSS proviene del inglés Cascading Style Sheets que en español significa lenguaje de estilos en cascada, este describe como los elementos HTML son desplegados en pantalla. Permite reutilización a usar una misma hoja de estilos para diferentes páginas, estas hojas de estilo son almacenadas en archivos CSS.
+## Marco teórico
 
-(Fuente: [w3schools](http://www.w3schools.com/css/css_intro.asp))
+<a name="mimificar"></a>
+### Mimificar
+Es el proceso en el cual se remueve todas los caracteres innecesarios del código fuente sin realizar cambios en su funcionalidad. Los caracteres innecesarios pueden ser: espacios en blanco, caracteres de nueva linea, comentarios.
 
-<a href="#cabecera">A la cabecera</a>
+Esto es un tipo de ofuscación y se hace con la finaliad de comprimir los datos de esta forma acelerando la carga de las páginas web en el caso de JavaScript.
 
-<a name="sintaxis"></a>
-### Sintaxis
-CSS tiene los siguientes elementos: `Selector`, `propiedad` `valor`. El espacio de declaración es aquel comprendido entre llaves.
-```css
-selector {
-  propiedad: valor;
-}
-```
+(Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Minification_(programming)))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="selectores"></a>
-### Selectores
-Los selectores son usados para encontrar o seleccionar un elemento HTML basado en: `nombre del elemento`, `identificador`, `clase`, `atributo`.
+<a name="isp"></a>
+### ISP
+El Internet Service Provider es la organización que provee de acceso y uso a Internet, existen de diferente naturaleza y los servicios que ofrece son:
+- Acceso a Internet
+- Registro de nombre de dominio
+- Web hosting
+
+(Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Internet_service_provider))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="elemento"></a>
-#### Elemento
-Seleciona un elemento en base al nombre del elemento.
+<a name="diseñoWeb"></a>
+### Diseño web
+El diseño web se compone de diferentes habilidades y características para la producción y mantenimiento de páginas web.
 
-```css
-body {
-  propiedad: valor;
-}
-```
+Areas:
+- Diseño gráfico web
+- Diseño de interfaces
+- SEO
 
-<a href="#cabecera">A la cabecera</a>
+Este termino es usado normalmente para describir el proceso relacionado con el front-end (el lado del cliente).
 
-<a name="identificador"></a>
-#### Identificador
-El identificador o id es un tipo de selector que utiliza un atributo html id para seleccionar un elemento en especifico.
-
-El identificador **debe ser único**
-
-Para seleccionar el elemento es necesario usar el caracter numeral `#`.
-
-Adicionalmente el nombre de un identifiador no puede iniciar con un número.
-```css
-#ejemplo {
-  propiedad: valor;
-}
-```
+(Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Web_design))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="clase"></a>
-#### Clase
-El selector por clase, selecciona un elemento por el atributo clase.
+<a name="calidadWeb"></a>
+### Calidad web
+La calidad de la web, es un conjunto de especificiones y guias de estilo con la finalidad de promover una web de mayor calidad.
 
-Para seleccionar el elemento es necesario usar el caracter punto `.`.
-```css
-.ejemplo {
-  propiedad: valor;
-}
-```
+La w3c tiene una división de aseguramiento de la calidad cuyos objetivos son:
 
-También se puede especificar a través de `elemento.clase`. De esta forma se altera a aquellos elementos que contengan dicha clase.
+- Mejorar la calidad de las especificaciones del W3C, a través de directrices y revisiones de especificaciones en las etapas críticas de su desarrollo.
+- Promover el despliegue amplio y la correcta implementación de estas especificaciones a través de artículos, tutoriales y servicios de validación.
+- Comunicar el valor de los conjuntos de pruebas y ayuda a los grupos de trabajo a producir suites de prueba de calidad.
+- Diseñar procesos efectivos que, si se siguen, ayudarán a los grupos a alcanzar estos objetivos.
 
-```css
-elemento.nombreClase {
-  propiedad: valor;
-}
-```
+(Fuente: [W3C Quality Assurance](https://www.w3.org/QA/Activity.html))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="agrupamiento"></a>
-#### Agrupamiento
-Se puede agrupar diferentes selectores separando cada selector con una coma.
-
-```css
-elemento1, elemento2 {
-  propiedad: valor;
-}
-
-```
+<a name="WAI"></a>
+### WAI
+La Inicitiva de Accesibilidad a la Web o en inglés The Web Accessibility Initiative (WAI) desarrolla estrategias, directrices y recursos para ayudar a que la Web sea accesible para las personas con discapacidades.
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="comentarios"></a>
-#### Comentarios
-Para agregar comentarios se utiliza `/*` de inicio y `*/` de fin. Estos elementos son ignorados por el navegador.
+<a name="validacion"></a>
+### Validación
 
-```css
-/*
- Esto es una ejemplo de comentario
-*/
-elemento {
-  /* ejemplo de comentario */
-}
-```
+<a name="w3cMarkupValidationService"></a>
+#### W3C Markup Validation Service
+Este servicio es un validador por la W3C que permite a los usuarios comprobar que los documentos HTML y XHTML se encuentre correctamente formateados. La validación es paso importante para asegurar la calidad téccnica de las páginas web.
 
-(Fuente: [w3schools](http://www.w3schools.com/css/css_syntax.asp))
+- Enlaces:
+  - [W3C Markup Validation Service](https://validator.w3.org/)
+  - [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+(Fuente:[Wikipedia](https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="formasDeAgregarCss"></a>
-### Formas de agregar CSS
-El navegador formatea el documento HTML acorde a la información contenida en la hoja de estilo. Las formas para insertar hojas de estilo son:
+<a name="seo"></a>
+### SEO
+Search Engine Optimización o en español Optimización en motores de búsqueda. Es el proceso que afecta la visibilidad de un sitio web o página web dentro de un motor de búsqueda web. El SEO puede tener objetivos diferentes dependiendo del tipo de buscador.
+
+Como una estratégia de marketing el SEO considera como los motores de búsqueda trabajan, que es lo que la gente busca, cuales son las palabras clave que el buscador usa y el tipo de motor de búsqueda preferido por los usuarios.
+
+(Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="interno"></a>
-#### Interno
-Este forma debe ser usada **si una sola página tiene un único estilo.**
+<a name="cdn"></a>
+### CDN
+Content Distribution Network ó Content Delivery Network, en español Red de Distribución de Contenidos, es una red ditribuida globlamente de servidores proxy desplegados en multiples centros de datos. El objetivo de un CDN es servir de contenidos a usuarios finales con alta disponibilidad y alto rendimiento.
+
+Estos pueden servir:
+- Objetos web: Texto, graficos, scripts.
+- Objetos descargables: Archivos multimedia, software, documentos.
+- Aplicaciones: E-Commerce, portales.
+
+(Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network))
+
+<a href="#cabecera">A la cabecera</a>
+
+<a name="bootstrap"></a>
+### Bootstrap
+Bootstrap es un framework gratuito para el front-end rápido y facíl para el desarrollo web, este incluye plantillas de diseño basados en HTML y CSS para tipografía, formularios, botones, tablas, navegación, entre otros, asi también opcionalmente plugins JavaScript.
+
+Este framework provee la habilidad de crear facilmente diseño responsivo.
+
+(Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
+
+<a href="#cabecera">A la cabecera</a>
+
+<a name="mobile-first"></a>
+#### Mobile-first
+Este enfoque propone los estilos mobile-first como parte del nucleo del framework, es decir, este framework esta diseñado para ser responsivo con los dispositivos móviles.
+
+Para asegurar un apropiado renderizado y touch-zooming es necesario agragar:
 
 ``` html
-<style>
-
-elemento {
-  propiedad: valor;
-}
-
-</style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
-<a name="externo"></a>
-#### Externo
-Este método permite cambiar la imagen de una web solo cambiando un archivo. En cada página se debe incluir un referencia al recurso externo dentro de una etiqueta link.
+
+Donde:
+`width=device-width` configura el ancho de la página  en función del ancho de la pantalla del dispositivo.
+
+`initial-scale=1` configura el nivel inicial de zoom cuando la página es cargada en el navegador.
+
+(Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
+
+<a href="#cabecera">A la cabecera</a>
+
+<a name="contenedores"></a>
+#### Contenedores
+Boostrap requiere un contenedor que tiene la finalidad de envolver los contenidos del sitio.
+
+Los contenedores tiene dos clases:
+
+`.container` provee un resposive ajustado al ancho del contenedor.
 
 ``` html
-<head>
-<link rel="stylesheet" href="ejemplo.css">
-</head>
-```
-De eta forma hace referencia al la hoja de estilos externa.
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="enLinea"></a>
-#### En linea
-Este método debe ser usado para **un solo estilo de solo elemento**, el estilo puede contener cualquier propiedad de CSS.
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="multiplesHojasDeEstilo"></a>
-### Multiples hojas de estilo
-Si algunas propiedes dentro de diferentes hojas de estilos son iguales, el valor de la última en ser leida es la usada.
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="ordenEnCascada"></a>
-#### Orden en cascada
-CSS adicional a lo anterior sigue las siguientes reglas de prioridad.
-
-1. Estilos en linea.
-2. Hojas de estilo, externas e internas.
-3. Estilos por defecto del navegador.
-
-(Fuente: [w3schools](http://www.w3schools.com/css/css_howto.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="colores"></a>
-### Colores
-Los colores pueden ser especificados por: `nombre`, `RGB`, `Hexadecimal`
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="nombres"></a>
-#### Nombres
-Selecciona un color tan solo escribiendo el nombre. Estos nombres son insensibles al caso, es decir no importa si esta escrito en mayúsculas o minúsulas.
-
-```
-Ejemplo
-red, green, blue
+<div class="container">
+  ...
+</div>
 ```
 
-<a href="#cabecera">A la cabecera</a>
-
-<a name="rgb"></a>
-#### RGB
-El color viene dado por la combinación de los valores (Red, Green, Blue), estos valores se encuentran entre 0 y 255.
-
-```
-Ejemplo
-rgb(255,0,0) // corresponde a Red
-rgb(0,255,0) // corresponde a Green
-rgb(0,0,255) // corresponde a Blue
-```
-
-Los grises se obtiene cuando se tiene los mismos valores RGB
-```
-Ejemplo
-rgb(255,255,255)
-rgb(0,0,0)
-```
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="hexadecimal"></a>
-#### Hexadecimal
-Los colores hexadecimal son valores de la forma `#RRGGBB`, similar a RGB, sin embargo estos valores se encuentran entre 00 y FF (hexadecimal).
-```
-Ejemplo
-#FF0000 // corresponde a Red
-#00FF00 // corresponde a Green
-#0000FF // corresponde a Blue
-```
-(Fuente: [w3schools](http://www.w3schools.com/css/css_colors.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="modeloDeCaja"></a>
-### Modelo de caja
-Todos los elements HTML son considerdos como cajas, el modelo en caja CSS es escencial para envolver a los elementos CSS. Estos elementos son `Content`, `Padding`, `Border`, `Margin`.
-
-#TODO: Agregar imagen de modelo en caja
+`.container-fluid` provee a un contenedor ajustado a todo el ancho, abarcando todo el ancho de la ventana.
 
 ``` html
-elemento {
-  width: valor;
-  border: valor;
-  padding: valor;
-  margin: valor;
-}
-
+<div class="container-fluid">
+  ...
+</div>
 ```
 
-(Fuente: [w3schools](http://www.w3schools.com/css/css_boxmodel.asp))
+**Los contenedores no son anidables**, es decir, no se puede poner un contenedor dentro de otro contenedor.
+
+(Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="propiedades"></a>
-### Propiedades
-A continuación de explica algunas propiedades vistas en clase.
+<a name="sistemaDeGrids"></a>
+#### Sistema de grids
+Bootstrap provee un sistema de grids que permite hasta 12 columnas a lo largo de la página, sino se usa todas la columnas se las puede agrupar, creando así columnas mas anchas.
+
+Boostrap esa un sistema de resposive y las columnas pueden ser re-ordenadas automaticamente dependiendo del tamaño de la pantalla.
+
+Algunas consideraciones a tener en cuenta:
+
+- Se deben colocar filas dentro de un `.container` (ancho fijo) o `.container-fluid` (ancho completo) para una alineación y relleno adecuados.
+- Se debe colocar el contenido entre columnas y solamente estas pueden ser los hijos inmediatos de las filas
+- Se crean las columnas de cuadrícula al especificar la cantidad doce columnas disponibles que desee generar. Por ejemplo, tres columnas iguales usarían tres `.col-xs-4.`
+- Si se crea más de 12 columnas en una sola fila, cada grupo extra de columnas es enviado a una nueva linea.
+
+Algunos opciones
+
+- Prefijos de clase
+  - .col-xs-
+    - ancho de columna automático
+    - dispositivos muy pequeños < 768px
+  - .col-sm-
+    - ancho de columna 62px
+    - dispositivos pequeños >= 768px
+  - .col-md-
+    - ancho de columna 81px
+    - dispositivos medianos >= 992px
+  - .col-lg-
+    - ancho de columna 97px
+    - dispositivos grandes >= 1200px
+
+(Fuente: [Bootstrap](http://www.oneskyapp.com/es/docs/bootstrap/css))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="background-color"></a>
-#### background-color
-Configura un color de fondo a difrentes elementos
+<a name="formularios"></a>
+#### Formularios
+Los formularios HTML automaticamente reciben un estilo global, los elementos `<input>` con la clase `.form-control` y envueltos en un `.form-group` se encuentran con un ancho al 100% por defecto.
 
 ``` html
-/* por color*/
-div {
-  background-color: blue;
-}
-
-/* por hexadecimal*/
-a {
-  background-color: #0000FF;
-}
-
-/* por rgb*/
-h1 {
-  background-color: rgb(255,0,0);
-}
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <input type="email" class="form-control">
+  </div>
+</form>
 
 ```
+También existen formularios:
+- en linea
+- horizontales
 
-(Fuente: [w3schools](http://www.w3schools.com/cssref/pr_background-color.asp))
+(Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="border-style"></a>
-#### border-style
-Configura el estilo de los cuatro bordes
-
-``` html
-elemento {
-  border-style: valor valor valor valor;
-}
+<a name="tablas"></a>
+#### Tablas
+Las tablas utilizan la clase base `.table` y este pude ser agragado a cualquier etiqueta `<table>`.
 
 ```
-Existen diferetentes valores: `solid`, `double`, `dotted`
-
-(Fuente: [w3schools](http://www.w3schools.com/cssref/pr_border-style.asp))
-
-<a href="#cabecera">A la cabecera</a>
-
-<a name="border-color"></a>
-#### border-color
-Configura el color de los cuatro bordes
-
-``` html
-elemento {
-  border-color: valor valor valor valor;
-}
-
+<table class="table">
+  ...
+</table>
 ```
-Existen diferentes valores: `color`, `transparente`.
 
-(Fuente: [w3schools](http://www.w3schools.com/cssref/pr_background-color.asp))
+Tipos de tablas
+- `.table-striped`
+- `.table-bordered`
+- `.table-hover`
+- `.table-condensed`
 
-<a href="#cabecera">A la cabecera</a>
+Se puede utilizar clases contextuales para agragar colores a las tablas
+-  `.active` Aplica el color de desplazamiento del ratón a una fila o celda específicas.
+-  `.success` Indica una acción exitosa o positiva.
+- `.info`	Indica un cambio o acción informativos neutrales.
+- `.warning` Muestra una advertencia que puede hacer falta solucionar.
+- `.danger` Indica un acción peligrosa o potencialmente negativa
 
-<a name="transitions"></a>
-#### transitions
-Es un propiedad `shorthand`, esta permite agregar una transición al elemento seleccionado.
-
-```
-div {
-  transition: valor valor;
-}
-
-```
-Existen diferentes valores: `duration`, `delay`.
-
-(Fuente: [w3schools](http://www.w3schools.com/cssref/css3_pr_transition.asp))
+(Fuente: [Bootstrap](http://getbootstrap.com/css/))
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="desarrolloDeLaPractica"></a>
-## Desarrollo de la practica
-Agregado estilos dentro de html
+## Desarrollo de la práctica
+Agregado framework Bootstrap desde CDN
 
 ``` html
-<head>
-  <meta charset="utf-8">
-  <title> Aprendiendo CSS </title>
-  <style>
-    /*
-      //TAGS
-      nombreTag {
-      Propiedad1:valorPropiedad1;
-      Propiedad2:valorPropiedad2;
-      }
-      */
-      html{
-        background-color: #687fd4;
-      }
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      body {
-          background-color: #687fd4;
-      }
-
-      h1 {
-          background-color: #68d487;
-      }
-
-    /* nombrePropiedad:valorPropiedad; */
-    </style>
-</head>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 ```
-#TODO:htmlCSS
 
-Agregado uso selector por clases
+Agregado mobile-first
 ``` html
-html {
-   background-color: #687fd4;
-   background-color: #687fd4;
- }
-
- p {
-   background-color: #15754c;
-}
-
-  /*
-  // CLASES
-  .nombreClase {
-  }      
-  */
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
-#TODO:clasesCSS
 
-Agregado uso selector por identificador
+Agregado contenedor
 ``` html
- <p id="parrafoDeAmarillo" class="nombreClaseVerde">Parrafo 2</p>
+<!-- .container -->
+   <div class="container" style="background-color:#687fd4;">
 ```
-#TODO:identificadorCSS
 
-Agregado estilos externos CSS
+Agregado tablas y respectivos tamaños
 ``` html
-<link rel="stylesheet" href="/CSS/estilos.css">
-<link rel="stylesheet" href="/CSS/estilos1.css">
-<link rel="stylesheet" href="/CSS/estilos2.css">
+<style>
+.borde {
+  border-style: solid;
+}  
+</style>
+
+<div class="container">
+<div class="col-md-4 borde">
+    <h2>Columna md4-1</h2>
+
+    <!-- .row>.col-xs-2.borde+.col-xs-5.borde*2 -->
+    <div class="row">
+        <div class="col-xs-2 borde">columna-xs-2-1</div>
+        <div class="col-xs-3 borde">columna-xs-2-2</div>
+        <div class="col-xs-3 borde">columna-xs-2-3</div>
+    </div>
+</div>
+
+<div class="col-md-4 borde">
+    <h2>Columna md4-2</h2>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-1</h3>
+    </div>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-2</h3>
+    </div>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-3</h3>
+    </div>
+    <div class="col-sm-2 borde">
+        <h3>CSM3-4</h3>
+    </div>
+</div>
+<div class="col-md-4 borde">
+    <h2>Columna md4-3</h2>
+
+   <!-- .col-lg-6.borde*3>h3 -->
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-1</h3>
+   </div>
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-2</h3>
+   </div>
+   <div class="col-lg-6 borde">
+       <h3>col-lg-6-3</h3>
+   </div>
+</div>
 ```
-#TODO:externoCSS
+#TODO:grids.png
+
+Agregado user inputs
+``` html
+<p> Esta web permite el uso de <kbd>ctrl</kbd> + <kbd>c</kbd></p>
+```
+#TODO:userInputs.png
+
+Agregado tablas
+Tabla simple
+``` html
+<table>
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tr>
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <tr>
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+</table>
+```
+#TODO:tablaSimple.png
+
+
+Tabla simple Boostrap
+``` html
+<table class="table">
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tr>
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <tr>
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+</table>
+```
+#TODO:tablaSimpleBootstrap.png
+
+Agregado colores a tabla striped
+``` html
+<div class="container">
+<table class="table table-striped">
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tbody>
+ <tr>
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <tr>
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+ <tbody>
+</table>
+</div>
+```
+#TODO:tablaSimpleStripped.png
+
+Agregado colores a tabla hover simple colores contextuales
+``` html
+<div class="container">
+<table class="table table-striped">
+ <thead>
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <thead>
+ <tbody>
+<!-- Agregado colores tabla -->
+ <tr class="warning">
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <!-- Agregado colores tabla -->
+ <tr class="success">
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+ <tbody>
+</table>
+</div>
+```
+#TODO:tablaSimpleContextual.png
+
+Agregado formulario simple
+``` html
+<form>
+  <label>Usuario: </label>
+  <input type="text"></input>
+  <label>Contraseña: </label>
+  <input type="password"></input>
+</form>
+```
+#TODO:formularioSimple
+
+Agregado formulario simple Boostrap
+``` html
+<!-- Agregado formulario simple Boostrap-->
+<form>
+  <div class="form-group">
+    <label>Usuario: </label>
+    <input type="text" class="form-control"></input>
+  </div>
+  <div class="form-group">
+    <label>Contraseña: </label>
+    <input type="password" class="form-control"></input>
+  </div>
+</form>
+```
+#TODO:formularioSimpleBootstrap.png
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
-- Separar la forma en como la información es desplegada a través del CSS permite desacoplar el trabajo y la lógica de las aplicaciones web.
-- La potencialidad de CSS3 permite ahora realizar animaciones e incluso menú desplegables, equiparando usos de JavaScript.
-- El funcionamiento de las propiedades de CSS dependen de interprete (navegador), para ello es necesario saber que tipo navegadores acepta la propiedades utilizadas con la finalidad de los estilos aplicados sean multiplataforma.
+- Bootstrap es un framework que facilita y agiliza el desarrollo del front-end de una aplicación web.
+- Bootstrap provee al desarrollad@r una forma fácil de implementación de diseño responsivo.
+- Boostrap permite crear el front-end con criterios de calidad (diseño responsivo, accesibilidad).
+- Boostrap es recomendado por la W3C, lo cual indica que es un framework que cumple con los estándares propuestos por dicha organización.
 
 <a href="#cabecera">A la cabecera</a>
