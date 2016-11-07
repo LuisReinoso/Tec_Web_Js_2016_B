@@ -402,7 +402,6 @@ Agregado estilos dentro de html
     </style>
 </head>
 ```
-#TODO:htmlCSS
 
 Agregado uso selector por clases
 ``` html
@@ -421,13 +420,11 @@ html {
   }      
   */
 ```
-#TODO:clasesCSS
 
 Agregado uso selector por identificador
 ``` html
  <p id="parrafoDeAmarillo" class="nombreClaseVerde">Parrafo 2</p>
 ```
-#TODO:identificadorCSS
 
 Agregado estilos externos CSS
 ``` html
@@ -435,7 +432,6 @@ Agregado estilos externos CSS
 <link rel="stylesheet" href="/CSS/estilos1.css">
 <link rel="stylesheet" href="/CSS/estilos2.css">
 ```
-#TODO:externoCSS
 
 <a href="#cabecera">A la cabecera</a>
 
