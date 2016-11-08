@@ -361,6 +361,30 @@
         
         console.log(eightiesMovies[1][4]);
         
+        /**
+         Ingresar arreglo con numeros y string
+         obtener numero de strings
+        **/
+        
+                
+        function numeroStrings (arreglo) {
+            
+            var length = arreglo.length;
+            var contador = 0;
+            for (var i = 0; i< length; i++) {
+                if (typeof(arreglo[i]) == typeof("") ) {
+                    contador++
+                }
+            }
+            return contador;
+        }
+        
+        var arreglo = [1,"2",3,"4",5, "ss"];
+        
+        console.log(numeroStrings(arreglo));
+        
+        
+        
     </script>
 
 </body>
