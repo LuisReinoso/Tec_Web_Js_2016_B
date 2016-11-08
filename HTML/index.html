@@ -222,9 +222,35 @@
             numSheep = solucion;
         }
         
+        
+        //Problema de las ovejas - Modificacion numero 2
+        console.log("problema de la ovejas - modificado");
+
+        var numSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+        var i = 0;
+        var solucion = 0;
+
+        console.log("implementacion for");
+
+        //Implementacion con for
+        for (i = 0; i < monthsToPrint; i++) {
+            console.log("Numero de ovejas: " + numSheep);
+            solucion = numSheep * 4;
             
-
-
+            if (solucion > 10000) {
+                if (monthsToPrint == 4 | monthsToPrint == 8 | monthsToPrint == 12) {
+                    console.log("poblacion va a la muerte: "+solucion*0.75);
+                    solucion = solucion / 2;
+                } else {
+                    console.log("poblacion va a la muerte: "+solucion/2);
+                    solucion = solucion / 2;    
+                }
+            }
+            numSheep = solucion;
+        }
+        
         //Objeto en XML
         /**
         <persona>
