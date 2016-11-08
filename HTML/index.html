@@ -165,14 +165,27 @@
         var i = 0;
         var solucion = 0;
         
+        console.log("implementacion for");
         
+        //Implementacion con for
         for (i = 0 ; i < monthsToPrint; i++) {
             console.log("Numero de ovejas: "+numSheep);
             solucion = numSheep * 4;
             numSheep = solucion;
         }
         
+        var bandera = 0;
         
+        console.log("implementacion while");
+        
+        //Implementacion con while
+        while (bandera < monthsToPrint) {
+            console.log("Numero de ovejas: "+numSheep);
+            solucion = numSheep * 4;
+            numSheep = solucion;
+            bandera++;
+        }
+                
         //Objeto en XML
         /**
         <persona>
