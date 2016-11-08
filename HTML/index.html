@@ -116,10 +116,57 @@
         
         //Agregando valor a arreglo
         arregloNumero.push(1);
+        arregloNumero.push(10);
+        arregloNumero.push(3);
+        arregloNumero.push(8);
+        arregloNumero.push(1);
         
         //Imprimir valores de numero
         for ( numero in arregloNumero) {
             console.log(numero);
+        }
+        
+        //Eliminar elemento
+        arregloNumero.pop();
+        
+        console.log("eliminando ultimo elemento");
+        
+        //Imprimir valores de numero
+        for ( numero in arregloNumero) {
+            console.log(numero);
+        }
+        
+        console.log("eliminar elemento");
+        
+        //Anadir elemento que queramos
+        arregloNumero.splice(0,1);
+        
+        //Imprimir valores de numero
+        for ( numero in arregloNumero) {
+            console.log(numero);
+        }
+        
+        //Añadiendo numeros
+        arregloNumero.splice(0,1,5);
+        
+        console.log("eliminar elemento");
+        
+        //Imprimir valores de numero
+        for ( numero in arregloNumero) {
+            console.log(numero);
+        }
+        
+        // Problema de las ovejas
+        var numSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+        var i = 0;
+        var solucion = 0;
+        
+        for (i = 0 ; i < monthsToPrint; i++) {
+            solucion = numSheep * 4;
+            numSheep = solucion;
+            console.log("Numero de ovejas: "+numSheep);
         }
         
         
