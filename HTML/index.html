@@ -267,9 +267,52 @@
         }
         
         // impresion de nombre de funcion
-        multiplicador(1,2,3)
+        multiplicador(1,2,3);        
         
         //Casi nunca se usa el prompt, y alert
+        
+        
+        /**
+         Problema de los numeros
+         funcion dos numeros y retorna mayor
+        **/
+        
+        function mayor(numero1, numero2) {
+            if (numero1 > numero2) {
+                return numero1;
+            } else if (numero2 > numero1) {
+                return numero2;
+            } else {
+                return numero1; //se imprime cualquier numero de los dos
+            }
+        }
+        
+        console.log("El mayor es: "+mayor(1,2));
+        console.log("El mayor es: "+mayor(3,2));
+        console.log("El mayor es: "+mayor(10,2));
+        console.log("El mayor es: "+mayor(11,11));
+        
+        
+        /**
+        Refactorizar para que esto sea una sola linea
+        function
+        **/
+        
+        function mystery(x, y) {
+            var a = 4*x*y;
+            var b = 3*y+5;
+            var c = a+b;
+            return c;
+        }
+        
+        console.log(mystery(4,7));
+        
+        // refactorizacion
+        function refactor (x, y) {
+            return 4*x*y + 3*y+5;
+        }            
+        
+        console.log(mystery(4,7));
         
         //Objeto en XML
         /**
