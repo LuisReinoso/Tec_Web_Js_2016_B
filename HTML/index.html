@@ -157,6 +157,7 @@
             console.log(numero);
         }
 
+        /**
         // Problema de las ovejas
         console.log("problema de la ovejas");
 
@@ -221,7 +222,7 @@
             
             numSheep = solucion;
         }
-        
+        **/
         
         //Problema de las ovejas - Modificacion numero 2
         console.log("problema de la ovejas - modificado");
@@ -241,8 +242,8 @@
             
             if (solucion > 10000) {
                 if (monthsToPrint == 4 | monthsToPrint == 8 | monthsToPrint == 12) {
-                    console.log("poblacion va a la muerte: "+solucion*0.75);
-                    solucion = solucion / 2;
+                    console.log("poblacion va a la muerte 75%: "+solucion*0.75);
+                    solucion = solucion - solucion * 0.75;
                 } else {
                     console.log("poblacion va a la muerte: "+solucion/2);
                     solucion = solucion / 2;    
@@ -250,6 +251,14 @@
             }
             numSheep = solucion;
         }
+        
+        
+        //Agregado prompt
+        var respuesta = prompt("¿Cuál es tu edad?");
+        console.log("Se hizo numero: "+parseInt(contador));
+        
+        
+        //Casi nunca se usa el prompt, y alert
         
         //Objeto en XML
         /**
