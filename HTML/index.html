@@ -322,6 +322,45 @@
             <edad>24</edad>
         </persona>
         */
+        
+        
+        /**
+        Problema de las ovejas con el numero de rangers
+        **/
+        
+        //Problema de las ovejas - Modificacion numero 2
+        console.log("problema de la ovejas - modificado");
+        
+        function ranger (numeroOvejas) {
+            return numeroOvejas * 2;
+        }
+        
+        var numSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+        var i = 0;
+        var solucion = 0;
+
+        console.log("implementacion for");
+
+        //Implementacion con for
+        for (i = 0; i < monthsToPrint; i++) {
+            console.log("Numero de ovejas: "+numSheep+ " libras: "+ ranger(numSheep)); 
+            solucion = numSheep * 4;   
+            numSheep = solucion;
+        }
+        
+        
+        /**
+        Acceder al arreglo
+        **/
+        
+        var movie1 = [16, "Candles"];
+        var movie2 = [3, "Men", "and", "a", "Baby"];
+        var eightiesMovies =[movie1, movie2];
+        
+        console.log(eightiesMovies[1][4]);
+        
     </script>
 
 </body>
