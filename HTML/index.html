@@ -403,8 +403,8 @@
     <script>
     
         //Nombre
-        function nombre () {
-            
+        function nombre() {
+            alert("nombre");
         }
         
         //Anonimas
@@ -412,9 +412,32 @@
             alert("anonio");        
         }
     
+    
+    // problema de los pasajeros
+    var passangers = [["Thomas", "Meeks"],["Gregg", "Pollack"],["Christine", "Wong"],["Dan", "McGaw"]];
+        
+    var nombre
+    var modifiedNames = [];
+          
+    var modifiedNames = passangers.map (function (arreglo) {
+        return arreglo[0] + arreglo[1];
+    });
+    
+    console.log(modifiedNames);
+    
+    var cadaPasajero = passangers.map (function (variable) {
+        alert ("Nombre "+ variable[0] + variable[1]);
+    });
+           
+    console.log(cadaPasajero);
+                                    
+        
     </script>
     
-    <button onclick=anonimo()>dame clic</button>
+    
+    
+    <button onclick=anonimo()>dame clic anonimo</button>
+    <button onclick=nombre()>dame clic con nombre</button>
     
     
 
