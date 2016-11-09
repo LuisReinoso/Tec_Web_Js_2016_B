@@ -454,15 +454,42 @@
     }
     ];
         
-    console.log(puzzlers[0](2));
+    console.log(puzzlers[0](5));
     
-        
     
+    
+    /**
+    Solucion Thir own Adventure
+    **/
         
+    var userChoice = prompt("agregar valor: ");
+    
+    function seleccion (userChoice) {
+        switch (userChoice) {
+            case 1:
+                return function () {
+                alert ("You selected the Vines of Doom!");
+                };
+                break;
+            case 2:
+                return function () {
+                    alert ("Looks like you want the Lake of Despair");
+                };
+                break;
+            case 3:
+                return function () {
+                    alert ("The Caves of Catastrophe");
+                };
+                break;
+            default:
+                break;
+        }
+    }
+    
+    console.log(seleccion(1)());
+    
     </script>
-    
-    
-    
+            
     <button onclick=anonimo()>dame clic anonimo</button>
     <button onclick=nombre()>dame clic con nombre</button>
     
