@@ -521,6 +521,6 @@ Agregado formulario simple Boostrap
 - Bootstrap es un framework que facilita y agiliza el desarrollo del front-end de una aplicación web.
 - Bootstrap provee al desarrollad@r una forma fácil de implementación de diseño responsivo.
 - Boostrap permite crear el front-end con criterios de calidad (diseño responsivo, accesibilidad).
-- Boostrap es recomendado por la W3C, lo cual indica que es un framework que cumple con los estándares propuestos por dicha organización.
+- Boostrap es recomendado por la w3schools, lo cual indica que es un framework ampliamente usado en la WWW.
 
 <a href="#cabecera">A la cabecera</a>
