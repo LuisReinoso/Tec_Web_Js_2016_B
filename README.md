@@ -25,7 +25,7 @@
     - <a href="#identifiador">Identificador</a>
     - <a href="#clase">Clase</a>
     - <a href="#agrupamiento">Agrupamiento</a>
-    - <a href="#comentarios">Comentarios</a>
+  - <a href="#comentarios">Comentarios</a>
   - <a href="formasDeAgregarCss">Formas de agregar CSS</a>
     - <a href="#interno">Interno</a>
     - <a href="#externo">Externo</a>
@@ -147,7 +147,7 @@ elemento1, elemento2 {
 <a href="#cabecera">A la cabecera</a>
 
 <a name="comentarios"></a>
-#### Comentarios
+### Comentarios
 Para agregar comentarios se utiliza `/*` de inicio y `*/` de fin. Estos elementos son ignorados por el navegador.
 
 ```css
