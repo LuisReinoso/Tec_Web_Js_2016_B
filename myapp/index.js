@@ -9,7 +9,7 @@ app.get('/TecnologiasWeb', function (req, res) {
     console.log(req);
 
     console.log("lo que tengo en el res:");
-    res.send('Hello World!');
+    //res.send('Hello World!');
 
     /** cabeceras **/
     console.log("cabecera request:");
@@ -17,6 +17,11 @@ app.get('/TecnologiasWeb', function (req, res) {
     
     console.log("cabecera response:");
     console.log(res.headers);
+    
+    /** responder en cabecera **/
+    res.json({"nombre":"luis"});
+    res.send();
+    
     
 })
 
