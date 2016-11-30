@@ -3,7 +3,15 @@ var express = require('express')
 var app = express()
 
 app.get('/TecnologiasWeb', function (req, res) {
+  
+  /** request **/
+  console.log("lo que tengo en el request:");
+  console.log(req);
+  
+  console.log("lo que tengo en el res:");  
   res.send('Hello World!')
+  
+  
 })
 
 /** get resquest **/
