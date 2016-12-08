@@ -26,3 +26,20 @@
 - Desarrollo de la práctica
 - Conclusiones y recomendaciones
 ---
+## Tema
+NPM
+
+## Objetivos
+- Conocer que es NPM
+- Crear un paquete NPM
+- Reutilizar código a través de NPM
+
+## Marco teórico
+### NPM
+#### Paquetes
+##### package.json
+##### local
+##### global
+#### Modulos
+## Desarrollo de la práctica
+## Conclusiones y recomendaciones
