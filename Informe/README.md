@@ -78,4 +78,142 @@ Un módulo es cualquier cosa que se puede cargar con `require()` en un programa 
 Fuente [NPM](https://docs.npmjs.com/how-npm-works/packages#what-is-a-module)
 
 ## Desarrollo de la práctica
+- Instalacion npm
+
+  `dnf install npm`
+
+- Creación de primeros archivos
+
+``` JavaScript
+//Numeros
+var numero1 = 1;
+var numero2 = 2;
+
+//Impresion
+console.log(numero1 + numero2);
+```
+
+- Creación cuenta en [npmjs](https://www.npmjs.com/)
+
+crearNPM.png
+
+- Generación de proyecto NPM
+
+  `npm init`
+
+- Llenar los datos que se generan
+
+```
+name: (tmp.85FfxvC5Rx) calculadora
+version: (1.0.0)
+description: calculadora simple
+entry point: (index.js)
+test command:
+git repository:
+keywords: calculadora
+author: Luis
+license: (ISC) MIT
+```
+
+Esto genera automaticamente el archivo `package.json`
+
+``` json
+{
+  "name": "calculadoratest",
+  "version": "1.0.0",
+  "description": "calculadora simple",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculadora"
+  ],
+  "author": "Luis",
+  "license": "MIT"
+}
+```
+- Creación un modulo para NPM
+
+  Archivo index.js
+
+``` JavaScript
+//Numeros
+var numero1 = 1;
+var numero2 = 2;
+
+module.exports = {
+    funcionalidad: imprimirSuma1y2()
+}
+
+//suma
+function imprimirSuma1y2 () {
+    return numero1 + numero2;
+}
+```
+
+- Publicar en [npmjs](https://www.npmjs.com/)
+
+  `npm publish`
+
+  Ahora se encuentra dentro en los repositorios de npm
+
+calculadoratest.png
+
+- Uso de modulo localmente
+  - crear una carpeta e ingresar en ella
+  - ejecutar el comando
+
+  `npm install calculadoratest`
+
+  npmLocal.png
+
+    notar que se creo el directorio `node_modules` que contiene los archivos del repositorio calculadoratest
+
+  - crear un archivo js y usar require
+
+    ```JavaScript
+    var calculadora = require("tecnologiaswebrluis");
+
+    console.log(calculadora);
+
+    ```
+
+- Uso de modulo globalmente
+  - crear una carpeta e ingresar en ella
+  - ejecutar el comando
+
+  `npm install -g calculadoratest`
+
+  npmGlobla.png
+
+    notar que en esta ocasión no se crea el directorio `node_modules` pero se guarda el modulo dentro de una carpeta que almacena los modulos instalados de forma global.
+
+  - crear un archivo js y usar require
+
+    ```JavaScript
+    var calculadora = require("tecnologiaswebrluis");
+
+    console.log(calculadora);
+
+    ```
+- Eliminar paquete
+
+  - Eliminar de forma local
+
+    - Ingresar al directorio donde se encuentra la carpeta `node_modules`
+    - Ejecutar el comando `npm remove calculadoratest`
+
+      npmRemoveLocal.png
+
+      notar que la carpeta `node_modeles` se encuentra vacia
+
+  - Eliminar de forma global
+
+    - Ejecutar el comando `npm remove -g calculadoratest`
+
+  - Eliminar paquete del repositorio npm
+
+    - Ejecutar el comndo `npm unpublish --force calculadoratest`
+
 ## Conclusiones y recomendaciones
