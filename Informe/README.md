@@ -217,3 +217,7 @@ calculadoratest.png
     - Ejecutar el comndo `npm unpublish --force calculadoratest`
 
 ## Conclusiones y recomendaciones
+- El gestor de paquetes NPM promueve el rehuso de código permitiendo a los desarrolladores tener soluciones para un amplia variedad de problemas
+- NPM permite publicar facilmente los paquetes creados, sin embargo a la hora de eliminar los paquetes recomienda marcar al paquete como deprecate para así evitar problemas de dependencias con otros programas
+- El nombre del paquete creado debe ser único puesto que de ser repetido genera conflictos a la hora de la publicación y por tanto no es publicado
+- El nombre de los paquetes debe ser en minúsculas
