@@ -25,7 +25,9 @@
     - <a href="#modulos">Modulos</a>
 - <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
 - <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
+
 ---
+
 <a name="tema"></a>
 ## Tema
 NPM
