@@ -13,27 +13,33 @@
 ### Número de informe : `4`
 
 ---
+<a name="cabecera"></a>
 ## Índice de contenidos
-- Tema
-- Objetivos
-- Marco teórico
-  - NPM
-    - Paquetes
-      - package.json
-      - local y global
-    - Modulos
-- Desarrollo de la práctica
-- Conclusiones y recomendaciones
+- <a href="#tema">Tema</a>
+- <a href="#objetivos">Objetivos</a>
+- <a href="#marcoTeorico">Marco teórico</a>
+  - <a href="#npm">NPM</a>
+    - <a href="#paquetes">Paquetes</a>
+      - <a href="#packageJson">package.json</a>
+      - <a href="#localYGlobal">local y global</a>
+    - <a href="#modulos">Modulos</a>
+- <a href="#desarrolloDeLaPractica">Desarrollo de la práctica</a>
+- <a href="#conclusionesYRecomendaciones">Conclusiones y recomendaciones</a>
 ---
+<a name="tema"></a>
 ## Tema
 NPM
 
+<a name="objetivos"></a>
 ## Objetivos
 - Conocer que es NPM
 - Crear un paquete NPM
 - Reutilizar código a través de NPM
 
+<a name="marcoTeorico"></a>
 ## Marco teórico
+
+<a name="#npm"></a>
 ### NPM
 
 NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript.
@@ -42,6 +48,9 @@ NPM facilita que los desarrolladores de JavaScript compartan y reutilicen códig
 
 Fuente [Wikipedia](https://es.wikipedia.org/wiki/Npm), [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#paquetes"></a>
 #### Paquetes
 Un paquete es un archivo o directorio que es descrito por un `package.json`
 
@@ -50,6 +59,9 @@ Entre algunas formas de presentación se tiene:
 
 Fuente [NPM](https://docs.npmjs.com/how-npm-works/packages#what-is-a-package)
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#packageJson"></a>
 ##### package.json
 Un archivo `package.json` tiene la siguientes características:
 - Sirve de documentación para saber de qué paquetes depende el proyecto.
@@ -58,6 +70,9 @@ Un archivo `package.json` tiene la siguientes características:
 
 Fuente [NPM](https://docs.npmjs.com/getting-started/using-a-package.json)
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#localYGlobal"></a>
 ##### local y global
 Los paquetes pueden ser instalados de forma local o global dependiendo de su uso.
 Para ello se ejecuta la opción `-g` cuando se requiera instalar de forma global
@@ -68,6 +83,9 @@ Para ello se ejecuta la opción `-g` cuando se requiera instalar de forma global
 **Ejemplo global:**
 `npm install -g paquete`
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#modulos"></a>
 #### Modulos
 Un módulo es cualquier cosa que se puede cargar con `require()` en un programa Node.js.
 
@@ -77,6 +95,9 @@ Un módulo es cualquier cosa que se puede cargar con `require()` en un programa 
 
 Fuente [NPM](https://docs.npmjs.com/how-npm-works/packages#what-is-a-module)
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#desarrolloDeLaPractica"></a>
 ## Desarrollo de la práctica
 - Instalacion npm
 
@@ -84,14 +105,14 @@ Fuente [NPM](https://docs.npmjs.com/how-npm-works/packages#what-is-a-module)
 
 - Creación de primeros archivos
 
-``` JavaScript
-//Numeros
-var numero1 = 1;
-var numero2 = 2;
+  ``` JavaScript
+  //Numeros
+  var numero1 = 1;
+  var numero2 = 2;
 
-//Impresion
-console.log(numero1 + numero2);
-```
+  //Impresion
+  console.log(numero1 + numero2);
+  ```
 
 - Creación cuenta en [npmjs](https://www.npmjs.com/)
 
@@ -103,54 +124,54 @@ crearNPM.png
 
 - Llenar los datos que se generan
 
-```
-name: (tmp.85FfxvC5Rx) calculadora
-version: (1.0.0)
-description: calculadora simple
-entry point: (index.js)
-test command:
-git repository:
-keywords: calculadora
-author: Luis
-license: (ISC) MIT
-```
+  ```
+  name: (tmp.85FfxvC5Rx) calculadora
+  version: (1.0.0)
+  description: calculadora simple
+  entry point: (index.js)
+  test command:
+  git repository:
+  keywords: calculadora
+  author: Luis
+  license: (ISC) MIT
+  ```
 
-Esto genera automaticamente el archivo `package.json`
+  Esto genera automaticamente el archivo `package.json`
 
-``` json
-{
-  "name": "calculadoratest",
-  "version": "1.0.0",
-  "description": "calculadora simple",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "calculadora"
-  ],
-  "author": "Luis",
-  "license": "MIT"
-}
-```
+  ``` json
+  {
+    "name": "calculadoratest",
+    "version": "1.0.0",
+    "description": "calculadora simple",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "calculadora"
+    ],
+    "author": "Luis",
+    "license": "MIT"
+  }
+  ```
 - Creación un modulo para NPM
 
   Archivo index.js
 
-``` JavaScript
-//Numeros
-var numero1 = 1;
-var numero2 = 2;
+  ``` JavaScript
+  //Numeros
+  var numero1 = 1;
+  var numero2 = 2;
 
-module.exports = {
-    funcionalidad: imprimirSuma1y2()
-}
+  module.exports = {
+      funcionalidad: imprimirSuma1y2()
+  }
 
-//suma
-function imprimirSuma1y2 () {
-    return numero1 + numero2;
-}
-```
+  //suma
+  function imprimirSuma1y2 () {
+      return numero1 + numero2;
+  }
+  ```
 
 - Publicar en [npmjs](https://www.npmjs.com/)
 
@@ -216,8 +237,13 @@ calculadoratest.png
 
     - Ejecutar el comndo `npm unpublish --force calculadoratest`
 
+<a href="#cabecera">A la cabecera</a>
+
+<a name="#conclusionesYRecomendaciones"></a>
 ## Conclusiones y recomendaciones
 - El gestor de paquetes NPM promueve el rehuso de código permitiendo a los desarrolladores tener soluciones para un amplia variedad de problemas
 - NPM permite publicar facilmente los paquetes creados, sin embargo a la hora de eliminar los paquetes recomienda marcar al paquete como deprecate para así evitar problemas de dependencias con otros programas
 - El nombre del paquete creado debe ser único puesto que de ser repetido genera conflictos a la hora de la publicación y por tanto no es publicado
 - El nombre de los paquetes debe ser en minúsculas
+
+<a href="#cabecera">A la cabecera</a>
