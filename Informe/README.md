@@ -116,7 +116,9 @@ Fuente [NPM](https://docs.npmjs.com/how-npm-works/packages#what-is-a-module)
 
 - Creación cuenta en [npmjs](https://www.npmjs.com/)
 
-crearNPM.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/nodejs/Informe/Graficos/crearNPM.png" alt="creación cuenta de usuario en NPM" title="Usuario NPM" />
+</p>
 
 - Generación de proyecto NPM
 
@@ -179,7 +181,9 @@ crearNPM.png
 
   Ahora se encuentra dentro en los repositorios de npm
 
-calculadoratest.png
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/nodejs/Informe/Graficos/calcculadoratest.png" alt="publicación en NPM" title="publicación en NPM" />
+  </p>
 
 - Uso de modulo localmente
   - crear una carpeta e ingresar en ella
@@ -187,7 +191,9 @@ calculadoratest.png
 
   `npm install calculadoratest`
 
-  npmLocal.png
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/nodejs/Informe/Graficos/npmLocal" alt="modulo local" title="modulo local" />
+  </p>
 
     notar que se creo el directorio `node_modules` que contiene los archivos del repositorio calculadoratest
 
@@ -206,7 +212,9 @@ calculadoratest.png
 
   `npm install -g calculadoratest`
 
-  npmGlobla.png
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/nodejs/Informe/Graficos/npmGlobal.png" alt="modulo global" title="modulo global" />
+  </p>
 
     notar que en esta ocasión no se crea el directorio `node_modules` pero se guarda el modulo dentro de una carpeta que almacena los modulos instalados de forma global.
 
@@ -225,7 +233,9 @@ calculadoratest.png
     - Ingresar al directorio donde se encuentra la carpeta `node_modules`
     - Ejecutar el comando `npm remove calculadoratest`
 
-      npmRemoveLocal.png
+    <p align="center">
+    <img src="https://raw.githubusercontent.com/LuisReinoso/Tec_Web_Js_2016_B/nodejs/Informe/Graficos/npmRemoveLocal.png" alt="borrar modulo local" title="borrar modulo" />
+    </p>
 
       notar que la carpeta `node_modeles` se encuentra vacia
 
