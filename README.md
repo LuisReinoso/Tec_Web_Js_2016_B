@@ -39,4 +39,7 @@ El servidor web se encuentra localizado en la carpeta **assets**
 
 La carpeta assets contiene datos públicos
 
+Para gestionar tareas y recargar cambios usa Grunt.
+
+
 
