@@ -17,3 +17,26 @@ El -g nos deja usarlo globalmente
 ´´´
 > sails new nombreProyecto
 ´´´
+
+### Levantar servidor
+
+´´´
+> sails lift
+´´´
+
+´´´
+> node app.js
+´´´
+
+El sails pide opciones si no estan definidas, opciones:
+1. SAFE MODE: No se altera la base de datos
+2. ALTER MODE: Se va a alterar la base de datos si sea hace cambios en los modelos por ejemplo
+3. DELETE MODE: Borra todos los datos de la base de datos y vuele a crear los modelos.
+
+## El Servidor Web de Sailsjs
+
+El servidor web se encuentra localizado en la carpeta **assets**
+
+La carpeta assets contiene datos públicos
+
+
