@@ -41,5 +41,11 @@ La carpeta assets contiene datos públicos
 
 Para gestionar tareas y recargar cambios usa Grunt.
 
+## GEnerar controladores Sailsjs
 
+Para generar controladores se utiliza el siguiente comando:
 
+´´´
+> sails generate controller
+
+´´´
