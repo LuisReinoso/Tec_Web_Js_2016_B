@@ -46,6 +46,20 @@ Para gestionar tareas y recargar cambios usa Grunt.
 Para generar controladores se utiliza el siguiente comando:
 
 ´´´
-> sails generate controller
+> sails generate controller Saludo
 
 ´´´
+
+## Generar un modelo
+´´´
+> sails generate model nombreModelo
+
+´´´
+
+## Generar APIs en Sailsjs
+´´´
+> sails generate api NombreAPI
+
+´´´
+
+Un Api es la fusión de un **Controlador** y de un **Modelo**
