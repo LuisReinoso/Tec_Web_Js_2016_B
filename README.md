@@ -63,3 +63,31 @@ Para generar controladores se utiliza el siguiente comando:
 ´´´
 
 Un Api es la fusión de un **Controlador** y de un **Modelo**
+
+## API REST
+
+# Crear
+
+´http://localhost:1337/´
+
+Metodo HTTP:
+
+´POST´
+
+Datos:
+
+´´´javascript
+{
+    nombre: 'Luis',
+    apellido: 'Reinoso',
+    correo: 'luis.reinoso@epn.edu.ec'
+}
+´´´
+
+
+
+
+
+
+
+

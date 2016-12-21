@@ -7,8 +7,19 @@
 
 module.exports = {
 
-  attributes: {
-
-  }
+    attributes: {
+        nombre: {
+            type: 'string',
+            minLength: 5
+        },
+        apellido: {
+            type: 'string',
+            minLength: 5
+        },
+        correo: {
+            type: 'string',
+            email: true,
+            defaultsTo: 'correo@invalido.com'
+        }
+    }
 };
-

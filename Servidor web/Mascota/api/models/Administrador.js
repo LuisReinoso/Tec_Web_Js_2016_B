@@ -13,7 +13,7 @@ module.exports = {
           minLength: 5
       },
       apellido: {
-          type: 'string'
+          type: 'string',
           minLength: 5
       },
       correo: {
