@@ -270,3 +270,9 @@ module.exports = {
   }
 };
 ```
+
+## Conclusiones y recomendaciones
+
+- El framework sails es el producto de juntar vario componentes como `grunt`, `waterline` entre otros facilitando que el programador solo se preocupe por la programación del back-end
+
+- Sails a pesar de que puede ser usado para generar el front-end se recomienda utilizar frameworks como angular para dicha tarea.
