@@ -94,3 +94,179 @@ El archivo pipeline.js se especifica los assets a ser inyectados dentro de las v
 Este archivo se encuentra dentro de la carpeta `task/` y ademas contiene las tareas de Grunt y sus configuraciones.
 
 ## Desarrollo de la practica
+- Instalado Sails via npm
+
+```
+> npm install -g sails
+
+```
+- Levantado servidor
+
+```
+> sails lift
+```
+
+- Agregado una imagen pública en la carpeta `assets`
+
+``` HTML
+<html>
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <h1>Hola mundo</h1>
+        <img src="imagenPublica.png"  alt="Puerta magica">
+        <script src="app.js">  
+        </script>
+    </body>
+</html>
+```
+
+- Inyectado css y javaScript dentro del archivo `pipeline.js`
+
+``` JavaScript
+// Load sails.io before everything else
+'js/dependencies/sails.io.js',
+'App/app.js',
+```
+
+- Modificado archivos ejs
+
+  - 404.ejs
+
+    ``` HTML
+    <p>Error 404</p>
+    ```
+
+  - homepage.ejs
+
+    ``` HTML
+    <h1>Contenido</h1>
+    <p>Contenido creado</p>
+    ```
+
+- Agregado vistas de ciudades
+
+  `quito.ejs`, `guayaquil.ejs`, `cuenca.ejs`
+
+- Agregado rutas explicitas dentro del archivo `routes.js`
+
+``` JavaScript
+'/': {
+     view: 'homepage'
+     },
+
+'/Quito': {
+    view:'quito'
+    },
+
+'/Guayaquil': {
+    view:'guayaquil'
+    },
+
+  '/Cuenca': {
+    view:'cuenca'
+   }
+```
+
+- Agregado enlaces desde el archivo `homepage.ejs`
+
+``` HTML
+<h1>Contenido</h1>
+<p class="azul">Contenido creado</p>
+ <ul>
+    <li><a href="/Quito"><img src="" alt="Quito" id="src"></a></li>
+    <li><a href="/Guayaquil"><img src="" alt="Guayaquil" id="src"></a></li>
+    <li><a href="/Cuenca"><img src="" alt="Cuenca" id="src"></a></li>
+ </ul>
+</p>
+```
+
+- Generado controlador SaludoController
+
+```
+> sails generate controller SaludoController
+```
+
+- Modificado archivo de controllador
+
+``` JavaScript
+/**
+ * SaludoController
+ *
+ * @description :: Server-side logic for managing Saludoes
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ */
+
+module.exports = {
+
+    // Acción hola
+    hola:function(req, res) {
+        res.json({
+            nombre: 'hola'
+        });
+    },
+
+    // Acción adios
+    adios:function(req, res) {
+
+        if (req.method == 'GET') {
+            res.json({
+                nombre: 'adios get'
+            });
+        }
+
+        if (req.method == 'POST') {
+            res.send('Adios POST');
+        }
+
+        if (req.method == 'PUT') {
+            res.send('Adios PUT');
+        }
+
+    },
+
+    // Acción hora
+    hora:function(req, res) {
+        res.send('Hora')
+    }
+};
+```
+
+- Agregado modelo
+
+```
+> sails generate model Administrador
+```
+
+- Modificado archivo de modelo
+
+``` JavaScript
+/**
+ * Administrador.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
+ */
+
+module.exports = {
+
+  attributes: {
+      nombre: {
+          type: 'string',
+          minLength: 5
+      },
+      apellido: {
+          type: 'string'
+          minLength: 5
+      },
+      correo: {
+          type: 'string',
+          email: true
+      },
+
+
+  }
+};
+```
