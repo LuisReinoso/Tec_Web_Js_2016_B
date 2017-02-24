@@ -38,7 +38,8 @@ module.exports.routes = {
   'get /listarusuarios': 'RutasController.listarUsuarios',
   'get /editarUsuario': 'RutasController.editarUsuario',
 
-  'get /login': 'RutasController.login'
+  'get /login': 'RutasController.login',
+  'get /logout': 'RutasController.logout'
 
   /***************************************************************************
   *                                                                          *

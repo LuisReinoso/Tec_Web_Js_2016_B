@@ -51,7 +51,6 @@ module.exports.policies = {
   RutasController: {
     home: true,
     listarUsuarios: ['sessionAuth'],
-    crearUsuario: ['sessionAuth'],
     editarUsuario: ['sessionAuth', 'propiedadesUsuario']
   }
 

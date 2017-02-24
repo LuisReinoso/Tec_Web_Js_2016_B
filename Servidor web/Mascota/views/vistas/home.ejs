@@ -5,6 +5,10 @@
   <p>Registra tus mascotas</p>
   <p>
     <a class="btn btn-primary btn-lg" href="/crearusuario" role="button">Registrarse aqui!</a>
-    <a class="btn btn-primary btn-lg" href="/login" role="button">Iniciar sessión</a>
+    <% if(typeof autenticado == 'undefined') { %>
+      <a class="btn btn-primary btn-lg" href="/login" role="button">Iniciar sessión</a>
+    <% } else { %>
+      <a class="btn btn-primary btn-lg" href="/logout" role="button">Salir</a>
+    <% } %>
   </p>
 </div>

@@ -2,7 +2,8 @@ module.exports = {
 
   home: function(req, res) {
     return res.view('vistas/home', {
-      title: "Inicio"
+      title: "Inicio",
+      autenticado: req.session.credencial
     })
   },
 
@@ -84,5 +85,14 @@ module.exports = {
 
   login: function(req, res) {
     return res.view('vistas/login')
+  },
+
+  logout: function(req, res) {
+
+    req.session.credencial = undefined;
+    return res.view('vistas/home', {
+      autenticado: req.session.credencial
+    })
   }
+
 };

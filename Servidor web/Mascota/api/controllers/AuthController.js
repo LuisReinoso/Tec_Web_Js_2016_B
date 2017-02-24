@@ -63,7 +63,9 @@ module.exports = {
 
                 // Autenticar
                 req.session.credencial = usuarioEncontrado;
-                return res.view('vistas/home')
+                return res.view('vistas/home' , {
+                  autenticado: req.session.credencial
+                });
 
               }
             });
