@@ -14,7 +14,6 @@ module.exports = {
 
   listarUsuarios: function(req, res) {
 
-    var listaUsuario
     // Obtener usuarios
     Usuario.find().exec(function(error, listaUsuarios) {
 
