@@ -73,6 +73,7 @@ module.exports = {
           usuarios: listaUsuarios
         });
       });
+
     } else {
       return res.view('vistas/error', {
         title: 'Error',
@@ -83,5 +84,40 @@ module.exports = {
         }
       });
     }
+  },
+
+  editarUsuarioForm: function(req, res) {
+
+    parametros = req.allParams();
+
+    if (req.method == "POST") {
+
+      Usuario.update({
+        id: parametros.idUsuario
+      }, {
+        nombres: parametros.nombres,
+        apellidos: parametros.apellidos
+      }).exec(function(error, usuarioEditado) {
+
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Actualizar usuario',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+
+        return res.view('vistas/Usuario/listarUsuarios', {
+          title: "Listar Usuarios",
+          usuarios: usuarioEditado
+        });
+
+      })
+
+    }
+
   }
 };
