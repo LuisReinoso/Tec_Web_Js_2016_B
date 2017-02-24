@@ -39,26 +39,46 @@ module.exports = {
 
     parametros = req.allParams();
 
-    Usuario.findOne({
-      id: parametros.id
-    }).exec(function(error, usuarioEncontrado) {
-      if (error) {
-        return res.view('vistas/error', {
-          title: 'Error',
-          error: {
-            descripcion: 'Falla encontrar Usuario',
-            url: '/',
-            rawError: error
-          }
-        });
-      } else {
-        return res.view('vistas/Usuario/editarUsuario', {
-          title: "Listar Usuarios",
-          usuarioAEditar: usuarioEncontrado
-        });
-      }
-    })
+    if (parametros.id) {
+      Usuario.findOne({
+        id: parametros.id
+      }).exec(function(error, usuarioEncontrado) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla encontrar Usuario',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
 
+        if (usuarioEncontrado) {
+          return res.view('vistas/Usuario/editarUsuario', {
+            title: "Listar Usuarios",
+            usuarioAEditar: usuarioEncontrado
+          });
+        } else {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Usuario no encontrado',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+      })
+    } else {
+      return res.view('vistas/error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla id Usuario',
+          url: '/',
+          rawError: error
+        }
+      });
+    }
   }
-
 };
