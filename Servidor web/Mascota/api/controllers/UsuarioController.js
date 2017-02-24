@@ -125,7 +125,8 @@ module.exports = {
             id: listaUsuario.id
           }, {
             nombres: parametros.nombres,
-            apellidos: parametros.apellidos
+            apellidos: parametros.apellidos,
+            password: parametros.password
           }).exec(function(error, usuarioEditado) {
 
             if (error) {
