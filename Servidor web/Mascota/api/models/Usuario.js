@@ -8,18 +8,18 @@
 module.exports = {
 
     attributes: {
-        nombre: {
+        nombres: {
             type: 'string',
             minLength: 5
         },
-        apellido: {
+        apellidos: {
             type: 'string',
             minLength: 5
         },
         correo: {
             type: 'string',
             email: true,
-            defaultsTo: 'correo@invalido.com'
+            unique: true
         }
     }
 };
