@@ -101,4 +101,26 @@ module.exports = {
     })
   },
 
+  listarRazas: function(req, res) {
+
+    // Obtener usuarios
+    Raza.find().exec(function(error, listaRazas) {
+
+      if (error) {
+        return res.view('vistas/error', {
+          title: 'Error',
+          error: {
+            descripcion: 'Falla en listar Razas',
+            url: '/',
+            rawError: error
+          }
+        });
+      } else {
+        return res.view('vistas/Raza/listarRazas', {
+          title: "Listar Razas",
+          razas: listaRazas
+        });
+      }
+    });
+  },
 };

@@ -42,6 +42,7 @@ module.exports.routes = {
   'get /logout': 'RutasController.logout',
 
   'get /crearraza': 'RutasController.crearRaza',
+  'get /listarrazas': 'RutasController.listarRazas',
 
   /***************************************************************************
   *                                                                          *
