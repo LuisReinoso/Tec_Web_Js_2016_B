@@ -11,7 +11,8 @@ module.exports = {
     nombre: {
       type: 'string',
       enum: ['Bulldog', 'Chihuahua', 'Pitbull'],
-      required: true
+      required: true,
+      unique: true
     },
     //Mascotas -> es el nombre en plural del modelo a relacionarse
     mascotas: {

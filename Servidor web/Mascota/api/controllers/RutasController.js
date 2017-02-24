@@ -93,6 +93,12 @@ module.exports = {
     return res.view('vistas/home', {
       autenticado: req.session.credencial
     })
-  }
+  },
+
+  crearRaza: function(req, res) {
+    return res.view('vistas/Raza/crearRaza', {
+      title: "Crear Raza"
+    })
+  },
 
 };
