@@ -19,7 +19,14 @@ module.exports = {
 			}).exec(function(error, usuarioCreado) {
 
 				if (error) {
-					return res.serverError()
+					return res.view('vistas/error', {
+		        title: 'Error',
+		        error: {
+		          descripcion: 'Falla en el metodo HTTP',
+							url: '/crearusuario',
+							rawError: error
+		        }
+		      });
 				} else {
 					return res.view('vistas/Usuario/crearUsuario')
 				}
