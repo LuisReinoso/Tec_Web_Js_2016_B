@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-	crearRazaForm: function(req, res) {
+  crearRazaForm: function(req, res) {
 
     parametros = req.allParams();
 
@@ -41,6 +41,57 @@ module.exports = {
           }
         });
       }
+    }
+  },
+
+  eliminiarRaza: function(req, res) {
+
+    parametros = req.allParams();
+
+    if (parametros.id) {
+
+      Raza.destroy({
+        id: parametros.id
+      }).exec(function(error) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla en eliminar raza',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+      });
+
+      Raza.find().exec(function(error, listaRazas) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla en busqueda raza',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+
+        return res.view('vistas/Raza/listarRazas', {
+          title: "Listar Razas",
+          razas: listaRazas
+        });
+      });
+
+    } else {
+      return res.view('vistas/error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla en busqueda raza',
+          url: '/',
+          rawError: ""
+        }
+      });
     }
   },
 };
