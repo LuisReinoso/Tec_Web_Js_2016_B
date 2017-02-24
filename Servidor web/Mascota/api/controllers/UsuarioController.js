@@ -12,9 +12,9 @@ module.exports = {
 
     if (req.method == "POST") {
 
-      if (parametros.nombres != "" &&
-        parametros.apellidos != "" &&
-        parametros.correo != "") {
+      if (parametros.nombres &&
+        parametros.apellidos &&
+        parametros.correo) {
         Usuario.create({
           nombres: parametros.nombres,
           apellidos: parametros.apellidos,
