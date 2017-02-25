@@ -123,4 +123,52 @@ module.exports = {
       }
     });
   },
+
+  editarRaza: function(req, res) {
+
+    parametros = req.allParams();
+
+    if (parametros.id) {
+      Raza.findOne({
+        id: parametros.id
+      }).exec(function(error, razaEncontrado) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla encontrar Raza',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+
+        if (razaEncontrado) {
+          return res.view('vistas/Raza/editarRaza', {
+            title: "Listar Razas",
+            razaAEditar: razaEncontrado
+          });
+        } else {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Raza no encontrado',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+      })
+    } else {
+      return res.view('vistas/error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla id Raza',
+          url: '/',
+          rawError: error
+        }
+      });
+    }
+  },
+
 };
