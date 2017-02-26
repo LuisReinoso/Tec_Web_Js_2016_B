@@ -176,4 +176,29 @@ module.exports = {
       title: "Crear Mascota"
     })
   },
+
+  listarMascotas: function(req, res) {
+
+    // Obtener mascotas
+    Mascota.find()
+      .populate('idRaza')
+      .exec(function(error, listaMascotas) {
+
+      if (error) {
+        return res.view('vistas/error', {
+          title: 'Error',
+          error: {
+            descripcion: 'Falla en listar Mascotas',
+            url: '/',
+            rawError: error
+          }
+        });
+      } else {
+        return res.view('vistas/Mascota/listarMascotas', {
+          title: "Listar Mascotas",
+          mascotas: listaMascotas
+        });
+      }
+    });
+  },
 };
