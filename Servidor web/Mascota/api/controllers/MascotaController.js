@@ -78,4 +78,57 @@ module.exports = {
       }
     }
   },
+
+  eliminiarMascota: function(req, res) {
+
+    parametros = req.allParams();
+
+    if (parametros.id) {
+
+      Mascota.destroy({
+        id: parametros.id
+      }).exec(function(error) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla en eliminar mascota',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+      });
+
+      Mascota.find()
+        .populate('idRaza')
+        .exec(function(error, listaMascotas) {
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla en busqueda mascota',
+              url: '/',
+              rawError: error
+            }
+          });
+        }
+
+        return res.view('vistas/Mascota/listarMascotas', {
+          title: "Listar Mascotas",
+          mascotas: listaMascotas
+        });
+      });
+
+    } else {
+      return res.view('vistas/error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla en busqueda mascota',
+          url: '/',
+          rawError: ""
+        }
+      });
+    }
+  },
 };
