@@ -47,6 +47,7 @@ module.exports.routes = {
 
   'get /crearmascota': 'RutasController.crearMascota',
   'get /listarmascotas': 'RutasController.listarMascotas',
+  'get /editarMascota': 'RutasController.editarMascota',
 
   /***************************************************************************
   *                                                                          *

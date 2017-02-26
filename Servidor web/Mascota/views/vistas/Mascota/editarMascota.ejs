@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="col-sm-5">
+    <h2>Editar Mascota</h2>
+    <form action="/Mascota/editarMascotaForm" method="post" class="form-horizontal ">
+      <div class="form-group">
+        <label class="control-label col-sm-3">Nombre</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" placeholder="Ingrese nombre" name="nombre" value="<%= mascotaAEditar.nombre %>">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-3">Fecha nacimiento</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" placeholder="Ingrese nombre" name="fechaNacimiento" value="<%= mascotaAEditar.fechaNacimiento %>">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-3">Pais nacimiento</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" placeholder="Ingrese nombre" name="paisNacimiento" value="<%= mascotaAEditar.paisNacimiento %>">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-3">Raza</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" placeholder="Ingrese nombre" name="raza" value="<%= mascotaAEditar.idRaza.nombre %>">
+        </div>
+      </div>
+
+      <input type="hidden" name="idMascota" value="<%= mascotaAEditar.id %>">
+      <button type="submit" class="btn btn-success btn-block">Editar Mascota</button>
+    </form>
+
+  </div>
+  <div class="col-sm-1"></div>
+
+  <div class="col-sm-5 form-horizontal">
+    <h2>Datos Raza</h2>
+
+    <div class="col-sm-5 control-label">
+      <strong>Nombre</strong>
+    </div>
+    <div class="col-sm-7">
+      <p class="form-control-static">
+        <%= mascotaAEditar.nombre%>
+      </p>
+    </div>
+
+    <div class="col-sm-5 control-label">
+      <strong>Fecha nacimiento</strong>
+    </div>
+    <div class="col-sm-7">
+      <p class="form-control-static">
+        <%= mascotaAEditar.fechaNacimiento%>
+      </p>
+    </div>
+
+    <div class="col-sm-5 control-label">
+      <strong>Pais nacimiento</strong>
+    </div>
+    <div class="col-sm-7">
+      <p class="form-control-static">
+        <%= mascotaAEditar.paisNacimiento%>
+      </p>
+    </div>
+
+    <div class="col-sm-5 control-label">
+      <strong>Raza</strong>
+    </div>
+    <div class="col-sm-7">
+      <p class="form-control-static">
+        <%= mascotaAEditar.idRaza.nombre%>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+</div>

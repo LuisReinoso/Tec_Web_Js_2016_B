@@ -184,21 +184,70 @@ module.exports = {
       .populate('idRaza')
       .exec(function(error, listaMascotas) {
 
-      if (error) {
-        return res.view('vistas/error', {
-          title: 'Error',
-          error: {
-            descripcion: 'Falla en listar Mascotas',
-            url: '/',
-            rawError: error
+        if (error) {
+          return res.view('vistas/error', {
+            title: 'Error',
+            error: {
+              descripcion: 'Falla en listar Mascotas',
+              url: '/',
+              rawError: error
+            }
+          });
+        } else {
+          return res.view('vistas/Mascota/listarMascotas', {
+            title: "Listar Mascotas",
+            mascotas: listaMascotas
+          });
+        }
+      });
+  },
+
+  editarMascota: function(req, res) {
+
+    parametros = req.allParams();
+
+    if (parametros.id) {
+      Mascota.findOne({
+          id: parametros.id
+        })
+        .populate('idRaza')
+        .exec(function(error, mascotaEncontrado) {
+          if (error) {
+            return res.view('vistas/error', {
+              title: 'Error',
+              error: {
+                descripcion: 'Falla encontrar Mascota',
+                url: '/',
+                rawError: error
+              }
+            });
           }
-        });
-      } else {
-        return res.view('vistas/Mascota/listarMascotas', {
-          title: "Listar Mascotas",
-          mascotas: listaMascotas
-        });
-      }
-    });
+
+          if (mascotaEncontrado) {
+            return res.view('vistas/Mascota/editarMascota', {
+              title: "Listar Mascotas",
+              mascotaAEditar: mascotaEncontrado
+            });
+          } else {
+            return res.view('vistas/error', {
+              title: 'Error',
+              error: {
+                descripcion: 'Mascota no encontrado',
+                url: '/',
+                rawError: error
+              }
+            });
+          }
+        })
+    } else {
+      return res.view('vistas/error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla id Mascota',
+          url: '/',
+          rawError: error
+        }
+      });
+    }
   },
 };
