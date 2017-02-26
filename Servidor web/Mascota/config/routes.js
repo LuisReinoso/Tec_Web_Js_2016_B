@@ -45,6 +45,8 @@ module.exports.routes = {
   'get /listarrazas': 'RutasController.listarRazas',
   'get /editarRaza': 'RutasController.editarRaza',
 
+  'get /crearmascota': 'RutasController.crearMascota',
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

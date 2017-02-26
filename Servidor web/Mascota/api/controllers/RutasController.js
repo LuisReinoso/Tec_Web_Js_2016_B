@@ -171,4 +171,9 @@ module.exports = {
     }
   },
 
+  crearMascota: function(req, res) {
+    return res.view('vistas/Mascota/crearMascota', {
+      title: "Crear Mascota"
+    })
+  },
 };
